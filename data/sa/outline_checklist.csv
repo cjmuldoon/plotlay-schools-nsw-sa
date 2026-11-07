@@ -1,55 +1,55 @@
 school_key,school_name,grade,flag,in_comparison,outline_from,outline_note,area_m2
-120,Gilles Street Primary School,A,,True,City of Adelaide parcels in the SA Land Use polygon,"land-use polygon also holds Pulteney Grammar School (30,435 m2); split on 2016 council parcels",6901.1
-1881,Sturt Street Community School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Sturt Street Children's Centre (Integrated Centres),4662.0
-768,Adelaide High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,16128.3
-1919,Adelaide Botanic High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 135,969 m2, 6,685 m2",7243.1
-328,Parkside Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,15171.9
-169,Rose Park Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 1,229 m2",11956.9
-179,North Adelaide Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,8632.0
-156,Goodwood Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 779 m2 | includes co-located DfE Goodwood Preschool (Preschools)",9669.6
-447,Unley Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),DfE point 3 m outside the polygon; nearest EDUCATION polygon used,10308.0
-131,Norwood Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 29,197 m2 touch the outline and are not included (may be a shared or leased oval)",11475.0
-381,Richmond Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,11386.0
-1364,Warriappendi Secondary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,3670.0
-1036,East Adelaide School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 3,098 m2",15854.5
-810,Thebarton Senior College,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,109 m2",27704.7
-106,Cowandilla Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Cowandilla Children's Centre (Integrated Centres),40758.7
-457,Walkerville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,17243.2
-927,Glenunga International High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 44,477 m2 touch the outline and are not included (may be a shared or leased oval)",24825.1
-817,Marryatville High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,77437.5
-1285,Torrensville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Torrensville Preschool Centre (Preschools),16489.7
-646,Brompton Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Renown Park Children's Centre (Integrated Centres),18895.5
-1418,Bowden Brompton Community School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,204 m2, 2,091 m2",7634.2
-1063,Highgate School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,21051.3
-474,Trinity Gardens School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Trinity Gardens Children's Centre (Integrated Centres),46851.2
-548,Black Forest Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 12,209 m2 touch the outline and are not included (may be a shared or leased oval)",19518.9
-249,Marryatville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,22117.8
-475,Westbourne Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,14716.7
-152,Glen Osmond Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,19635.2
-647,Linden Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,29641.7
-903,Mitcham Girls High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,019 m2 | adjacent RECREATION/RESERVE parcels of 24,599 m2 touch the outline and are not included (may be a shared or leased oval)",18146.2
-798,Urrbrae Agricultural High School,D,outline takes in another campus,False,SA Land Use Generalised 2025 (EDUCATION class),not usable for ground per student (same exclusion as the OSM method),431660.4
-368,Prospect Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,34691.6
-797,Unley High School,C,,True,SA Land Use Generalised 2025 (EDUCATION class),"land-use polygon (522,300 m2) also holds Urrbrae Agricultural High, TAFE SA Urrbrae and Waite land",87779.2
-270,Mitcham Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,42922.5
-305,Nailsworth Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 1,498 m2",17152.4
-473,Allenby Gardens Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Allenby Gardens Child Parent Centre (Preschools),15287.0
-583,Marden Senior College,B,shared outline,False,SA Land Use Generalised 2025 (EDUCATION class),shares the land-use polygon with Open Access College,27302.5
-135,Flinders Park Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 46,072 m2",23493.8
-965,Underdale High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,80365.9
-967,Vale Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Vale Park Pre-school (Preschools),25282.1
-346,Plympton Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"visual review: irregular north-east wedge across a residential block, probably an adjacent education parcel dissolved into the polygon (not a DfE site); up to about 3,000 m2 may not be school ground",35173.4
-699,Burnside Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,25286.6
-1686,Adelaide Secondary School of English,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,51073.5
-1228,Felixstow Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"includes co-located DfE The Briars Preschool (Preschools) | adjacent RECREATION/RESERVE parcels of 33,564 m2 touch the outline and are not included (may be a shared or leased oval)",20971.0
-911,Lockleys North Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Lockleys Children's Centre (Integrated Centres),34390.9
-127,Edwardstown Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,24463.5
-570,Prospect North Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,16636.4
-231,Lockleys Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,8972.9
-207,Kilkenny Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Kilkenny Preschool (Preschools) | visual review: a large building on a separate non-education parcel cuts into the middle of the site; outline follows the parcels,17709.8
-907,Plympton International College,B,shared outline,False,SA Land Use Generalised 2025 (EDUCATION class),shares the land-use polygon with Errington Special Education Centre,67774.3
-723,Colonel Light Gardens Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 46,690 m2 touch the outline and are not included (may be a shared or leased oval)",14332.3
-787,Norwood International High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,57045.7
-898,Klemzig Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Auslan Early Learning Program (Preschools),26711.6
-658,Forbes Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Forbes Children's Centre (Integrated Centres),44190.3
-689,Hampstead Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Hampstead Preschool (Preschools),32231.5
+120,Gilles Street Primary School,A,,True,City of Adelaide parcels in the SA Land Use polygon,"land-use polygon also holds Pulteney Grammar School (30,435 m2); split on 2016 council parcels",6940.3
+1881,Sturt Street Community School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Sturt Street Children's Centre (Integrated Centres),4688.4
+768,Adelaide High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,16220.4
+1919,Adelaide Botanic High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 135,969 m2, 6,685 m2",7284.8
+328,Parkside Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,15257.2
+169,Rose Park Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 1,229 m2",12024.8
+179,North Adelaide Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,8682.2
+156,Goodwood Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 779 m2 | includes co-located DfE Goodwood Preschool (Preschools)",9723.6
+447,Unley Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),DfE point 3 m outside the polygon; nearest EDUCATION polygon used,10365.4
+131,Norwood Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 29,197 m2 touch the outline and are not included (may be a shared or leased oval)",11541.0
+381,Richmond Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,11450.0
+1364,Warriappendi Secondary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,3690.7
+1036,East Adelaide School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 3,098 m2",15946.7
+810,Thebarton Senior College,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,109 m2",27864.1
+106,Cowandilla Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Cowandilla Children's Centre (Integrated Centres),40989.7
+457,Walkerville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,17344.3
+927,Glenunga International High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 44,477 m2 touch the outline and are not included (may be a shared or leased oval)",24964.0
+817,Marryatville High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,77878.6
+1285,Torrensville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Torrensville Preschool Centre (Preschools),16584.4
+646,Brompton Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Renown Park Children's Centre (Integrated Centres),19006.4
+1418,Bowden Brompton Community School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,204 m2, 2,091 m2",7679.0
+1063,Highgate School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,21167.6
+474,Trinity Gardens School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Trinity Gardens Children's Centre (Integrated Centres),47122.9
+548,Black Forest Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 12,209 m2 touch the outline and are not included (may be a shared or leased oval)",19627.0
+249,Marryatville Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,22244.3
+475,Westbourne Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,14797.5
+152,Glen Osmond Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,19744.2
+647,Linden Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,29807.7
+903,Mitcham Girls High School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 2,019 m2 | adjacent RECREATION/RESERVE parcels of 24,599 m2 touch the outline and are not included (may be a shared or leased oval)",18245.8
+798,Urrbrae Agricultural High School,D,outline takes in another campus,False,SA Land Use Generalised 2025 (EDUCATION class),not usable for ground per student (same exclusion as the OSM method),434036.2
+368,Prospect Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,34896.8
+797,Unley High School,C,,True,SA Land Use Generalised 2025 (EDUCATION class),"land-use polygon (522,300 m2) also holds Urrbrae Agricultural High, TAFE SA Urrbrae and Waite land",88261.3
+270,Mitcham Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,43157.7
+305,Nailsworth Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 1,498 m2",17254.0
+473,Allenby Gardens Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Allenby Gardens Child Parent Centre (Preschools),15376.2
+583,Marden Senior College,B,shared outline,False,SA Land Use Generalised 2025 (EDUCATION class),shares the land-use polygon with Open Access College,27463.2
+135,Flinders Park Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"other EDUCATION polygon(s) within 120 m not included, unconfirmed as this school: 46,072 m2",23629.7
+965,Underdale High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,80827.9
+967,Vale Park Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Vale Park Pre-school (Preschools),25431.6
+346,Plympton Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"visual review: irregular north-east wedge across a residential block, probably an adjacent education parcel dissolved into the polygon (not a DfE site); up to about 3,000 m2 may not be school ground",35368.2
+699,Burnside Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,25429.8
+1686,Adelaide Secondary School of English,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,51375.0
+1228,Felixstow Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"includes co-located DfE The Briars Preschool (Preschools) | adjacent RECREATION/RESERVE parcels of 33,564 m2 touch the outline and are not included (may be a shared or leased oval)",21094.2
+911,Lockleys North Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Lockleys Children's Centre (Integrated Centres),34588.2
+127,Edwardstown Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,24596.8
+570,Prospect North Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,16735.6
+231,Lockleys Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,9024.0
+207,Kilkenny Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Kilkenny Preschool (Preschools) | visual review: a large building on a separate non-education parcel cuts into the middle of the site; outline follows the parcels,17814.0
+907,Plympton International College,B,shared outline,False,SA Land Use Generalised 2025 (EDUCATION class),shares the land-use polygon with Errington Special Education Centre,68148.6
+723,Colonel Light Gardens Primary School,B,,True,SA Land Use Generalised 2025 (EDUCATION class),"adjacent RECREATION/RESERVE parcels of 46,690 m2 touch the outline and are not included (may be a shared or leased oval)",14409.8
+787,Norwood International High School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),,57373.7
+898,Klemzig Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Auslan Early Learning Program (Preschools),26870.6
+658,Forbes Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Forbes Children's Centre (Integrated Centres),44431.1
+689,Hampstead Primary School,A,,True,SA Land Use Generalised 2025 (EDUCATION class),includes co-located DfE Hampstead Preschool (Preschools),32424.4

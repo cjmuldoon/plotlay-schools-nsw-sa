@@ -27,8 +27,8 @@ Every page has a **State** slicer and an **Enrolment year** slicer. The NSW page
 
    | Page | Schools compared | Median m² per student, primary | Median m² per student, secondary | Schools under 15 m² |
    |---|---|---|---|---|
-   | NSW | 80 | 27.8 | 26.9 | 12 |
-   | SA | 51 | 42.1 | 34.2 | 3 |
+   | NSW | 79 | 28.1 | 29.4 | 10 |
+   | SA | 51 | 42.4 | 34.4 | 3 |
 
    These are the figures in `data/comparison/10_inner_city_summary.csv`. If they match, the tables are joined correctly.
 

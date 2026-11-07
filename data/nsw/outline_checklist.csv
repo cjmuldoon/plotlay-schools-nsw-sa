@@ -1,87 +1,87 @@
 school_key,school_name,grade,flag,in_comparison,outline_from,outline_note,area_m2
-3305,Ultimo Public School,A,,True,NSW Cadastre lots,,5294.0
-3935,Crown Street Public School,A,,True,NSW Cadastre lots,,6210.8
-8147,Conservatorium High School,D,outline takes in another campus,False,NSW Cadastre lots,"Lot 1//DP832310, the Greenway building, which it shares with the Sydney Conservatorium of Music.",4007.7
-4551,Plunkett Street Public School,D,shared outline,False,NSW Cadastre lots,Its lot (2//DP866026) is shared with the distance education school next door.,7845.9
-1937,Fort Street Public School,A,,True,NSW Cadastre lots,Its lot covers the whole Observatory Hill site inside the ring road.,4497.9
-8539,Sydney Secondary College Blackwattle Bay Campus,A,,True,NSW Cadastre lots,,29873.3
-7414,Darlinghurst Public School,A,,True,NSW Cadastre lots,,5838.3
-8913,Inner Sydney High School,A,"staged opening: Years 7 to 11 in 2024, all year groups from 2025",False,NSW Cadastre lots,,5628.1
-7419,Glebe Public School,A,,True,NSW Cadastre lots,Three lots including the grassed block on the north side.,8012.9
-7408,Bourke Street Public School,A,,True,NSW Cadastre lots,,5762.3
-2749,Nicholson Street Public School,B,,True,NSW Cadastre lots,A 267 m² lot that does not touch the rest (11//DP879298) is left out.,3876.1
-2009,Glenmore Road Public School,A,,True,NSW Cadastre lots,,7996.0
-8137,Sydney Boys High School,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Girls High. Drawn: the lot split along a line between the two schools’ buildings.,37644.3
-1932,Forest Lodge Public School,A,,True,NSW Cadastre lots,,6924.8
-7404,Balmain Public School,A,,True,NSW Cadastre lots,,3448.4
-1735,Darlington Public School,A,,True,NSW Cadastre lots,Its lot includes the marked playing field.,7176.8
-8138,Sydney Girls High School,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Boys High. Drawn: the lot split along a line between the two schools’ buildings.,19723.1
-7432,Paddington Public School,A,,True,NSW Cadastre lots,,4402.6
-2744,Newtown North Public School,A,,True,NSW Cadastre lots,,6567.8
-1042,Annandale North Public School,A,,True,NSW Cadastre lots,,5628.1
-1768,Double Bay Public School,A,,True,NSW Cadastre lots,,7286.2
-8288,Central Sydney Intensive English High School,A,,True,NSW Cadastre lots,Lot 1//DP733605 on Mitchell Road; the department’s point falls in the street beside it.,6418.5
-8556,Alexandria Park Community School,A,,True,NSW Cadastre lots,Its lot includes the construction site to the north (the school’s new building).,26968.9
-1240,Birchgrove Public School,A,,True,NSW Cadastre lots,,7364.9
-7442,Woollahra Public School,A,,True,NSW Cadastre lots,,7219.4
-7435,Rozelle Public School,A,,True,NSW Cadastre lots,,15229.0
-4147,Erskineville Public School,A,,True,NSW Cadastre lots,,9275.4
-5104,Australia Street Infants School,A,,True,NSW Cadastre lots,,3297.4
-1041,Annandale Public School,A,,True,NSW Cadastre lots,,11042.8
-8484,Sydney Secondary College Balmain Campus,A,,True,NSW Cadastre lots,,35733.1
-7431,Newtown Public School,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown High of Performing Arts. Drawn round its own building and grounds. The playing field to the south is left out of both schools.,8693.5
-8530,Newtown High School of Performing Arts,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown Public. Drawn round its own buildings. The playing field to the south is left out of both schools.,17273.0
-2766,North Sydney Public School,A,,True,NSW Cadastre lots,,19159.7
-2812,Orange Grove Public School,A,,True,NSW Cadastre lots,,17643.2
-8507,Sydney Secondary College Leichhardt Campus,B,,True,NSW Cadastre lots,"Lot 50//DP1271697 has two parts: the fenced campus is used; the northern part, a field across the street, is left out.",15351.1
-2283,Kensington Public School,A,,True,NSW Cadastre lots,,7043.5
-7436,Stanmore Public School,A,,True,NSW Cadastre lots,,16346.8
-8910,Cammeraygal High School,D,school split across two sites,False,NSW Cadastre lots,"Lot 1//DP782580, the Years 7 to 9 campus at 192 Pacific Highway, Crows Nest (the department point falls on the strata building next door, SP87962). Its Years 10 to 12 campus at 149 West Street is not included, so its grounds per student would be understated: not compared.",6191.8
-7423,Leichhardt Public School,A,,True,NSW Cadastre lots,,15451.2
-1483,Camdenville Public School,A,,True,NSW Cadastre lots,,15322.1
-2730,Neutral Bay Public School,A,,True,NSW Cadastre lots,,8131.2
-8133,North Sydney Girls High School,A,,True,NSW Cadastre lots,,15745.8
-5112,Taverners Hill Infants School,A,,True,NSW Cadastre lots,,2720.7
-8132,North Sydney Boys High School,A,,True,NSW Cadastre lots,,24929.3
-3953,Waverley Public School,B,,True,NSW Cadastre lots,The grassed lot to the north and the treed strip to the west may also be used by the school; only lot 1//DP603457 is used.,7725.6
-1179,Bellevue Hill Public School,A,,True,NSW Cadastre lots,,6915.7
-3032,St Peters Public School,A,,True,NSW Cadastre lots,,19395.7
-4656,Anzac Park Public School,A,,True,NSW Cadastre lots,,9783.0
-1774,Drummoyne Public School,A,,True,NSW Cadastre lots,,9194.8
-8504,Fort Street High School,A,,True,NSW Cadastre lots,,39423.8
-4250,Randwick Public School,B,,True,NSW Cadastre lots,The courts and buildings in the middle of the block may also be the school’s; only the picked lots are used.,11799.8
-7418,Gardeners Road Public School,A,,True,NSW Cadastre lots,,20999.5
-3952,Marrickville Public School,A,,True,NSW Cadastre lots,,19329.1
-2270,Kegworth Public School,B,,True,NSW Cadastre lots,The corner lot to the south-west with a building and a court is left out; the school’s use of it is not clear on the imagery.,6674.7
-2076,Greenwich Public School,A,,True,NSW Cadastre lots,,21170.1
-4543,Wilkins Public School,A,,True,NSW Cadastre lots,,38603.4
-4502,Petersham Public School,A,,True,NSW Cadastre lots,,11709.0
-7407,Bondi Public School,A,,True,NSW Cadastre lots,"One lot, with the field and the building across the lane to the south.",11464.5
-8540,Marrickville High School,A,,True,NSW Cadastre lots,,30268.2
-1485,Cammeray Public School,A,,True,NSW Cadastre lots,,13421.9
-8326,Mosman High School,A,,True,NSW Cadastre lots,,14352.5
-7430,Mosman Public School,A,,True,NSW Cadastre lots,,13170.0
-1372,Bronte Public School,A,,True,NSW Cadastre lots,,5524.0
-2988,Rose Bay Public School,B,,True,NSW Cadastre lots,A treed lot between the field and the north building is left out.,10445.3
-5132,Russell Lea Public School,A,,True,NSW Cadastre lots,,11667.9
-8263,J J Cahill Memorial High School,A,,True,NSW Cadastre lots,,38184.1
-3873,Dobroyd Point Public School,A,,True,NSW Cadastre lots,,10114.8
-8599,Bradfield College,D,outline takes in another campus,False,drawn over NSW Imagery,"Inside the TAFE NSW St Leonards campus (lot 101//DP1075748, 5.4 ha). Drawn round its building only.",1236.1
-2543,Middle Harbour Public School,A,,True,NSW Cadastre lots,,13180.3
-4516,Eastlakes Public School,A,,True,NSW Cadastre lots,,18522.3
-4369,Lewisham Public School,B,,True,NSW Cadastre lots,A lot to the north-east with part of the courts touches the rest only through a sliver lot and is left out; buildings to the west and north may also be the school’s.,4006.9
-2499,Mascot Public School,A,,True,NSW Cadastre lots,,36689.6
-1573,Clovelly Public School,B,,True,NSW Cadastre lots,"Lots north and south-west of the school (trees, a strip between buildings) may also be the school’s; only the picked lots are used.",7569.7
-2930,Rainbow Street Public School,A,,True,NSW Cadastre lots,,17944.6
-8555,Rose Bay Secondary College,A,,True,NSW Cadastre lots,"One lot, with the field to the west.",23707.8
-7413,Daceyville Public School,A,,True,NSW Cadastre lots,,27801.9
-2189,Hunters Hill Public School,A,,True,NSW Cadastre lots,,9952.5
-8833,Dulwich High School of Visual Arts and Design,B,,True,NSW Cadastre lots,The field to the south-east is a separate lot and is left out.,15042.5
-8506,Tempe High School,A,,True,NSW Cadastre lots,,19890.7
-1616,Coogee Public School,A,,True,NSW Cadastre lots,,7853.5
-2117,Haberfield Public School,A,,True,NSW Cadastre lots,"One lot (70//DP1250857), with a grassed strip running south to the next street.",16571.9
-1292,Bondi Beach Public School,A,,True,NSW Cadastre lots,,10882.7
-3948,Tempe Public School,A,,True,NSW Cadastre lots,,17793.4
-2761,Northbridge Public School,A,,True,NSW Cadastre lots,,11743.7
-3129,Summer Hill Public School,A,,True,NSW Cadastre lots,"37 lots: the whole block, with the courts and the field across the lane.",14324.2
-8207,Hunters Hill High School,A,,True,NSW Cadastre lots,"One lot to the water, with the oval.",65207.0
+3305,Ultimo Public School,A,,True,NSW Cadastre lots,,5350.0
+3935,Crown Street Public School,A,,True,NSW Cadastre lots,,6276.4
+8147,Conservatorium High School,D,outline takes in another campus,False,NSW Cadastre lots,"Lot 1//DP832310, the Greenway building, which it shares with the Sydney Conservatorium of Music.",4050.3
+4551,Plunkett Street Public School,D,shared outline,False,NSW Cadastre lots,Its lot (2//DP866026) is shared with the distance education school next door.,7929.0
+1937,Fort Street Public School,A,,True,NSW Cadastre lots,Its lot covers the whole Observatory Hill site inside the ring road.,4545.8
+8539,Sydney Secondary College Blackwattle Bay Campus,A,,True,NSW Cadastre lots,,30189.3
+7414,Darlinghurst Public School,A,,True,NSW Cadastre lots,,5900.0
+8913,Inner Sydney High School,A,"staged opening: Years 7 to 11 in 2024, all year groups from 2025",False,NSW Cadastre lots,,5687.3
+7419,Glebe Public School,A,,True,NSW Cadastre lots,Three lots including the grassed block on the north side.,8097.4
+7408,Bourke Street Public School,A,,True,NSW Cadastre lots,,5822.9
+2749,Nicholson Street Public School,B,,True,NSW Cadastre lots,A 267 m² lot that does not touch the rest (11//DP879298) is left out.,3917.4
+2009,Glenmore Road Public School,A,,True,NSW Cadastre lots,,8080.3
+8137,Sydney Boys High School,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Girls High. Drawn: the lot split along a line between the two schools’ buildings.,38039.7
+1932,Forest Lodge Public School,A,,True,NSW Cadastre lots,,6997.8
+7404,Balmain Public School,A,,True,NSW Cadastre lots,,3485.1
+1735,Darlington Public School,A,,True,NSW Cadastre lots,Its lot includes the marked playing field.,7252.2
+8138,Sydney Girls High School,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Boys High. Drawn: the lot split along a line between the two schools’ buildings.,19930.1
+7432,Paddington Public School,A,,True,NSW Cadastre lots,,4448.9
+2744,Newtown North Public School,A,,True,NSW Cadastre lots,,6636.8
+1042,Annandale North Public School,A,,True,NSW Cadastre lots,,5687.5
+1768,Double Bay Public School,A,,True,NSW Cadastre lots,,7363.2
+8288,Central Sydney Intensive English High School,A,,True,NSW Cadastre lots,Lot 1//DP733605 on Mitchell Road; the department’s point falls in the street beside it.,6485.7
+8556,Alexandria Park Community School,A,,True,NSW Cadastre lots,Its lot includes the construction site to the north (the school’s new building).,27251.2
+1240,Birchgrove Public School,A,,True,NSW Cadastre lots,,7443.5
+7442,Woollahra Public School,A,,True,NSW Cadastre lots,,7295.4
+7435,Rozelle Public School,A,,True,NSW Cadastre lots,,15390.9
+4147,Erskineville Public School,A,,True,NSW Cadastre lots,,9372.5
+5104,Australia Street Infants School,A,,True,NSW Cadastre lots,,3332.0
+1041,Annandale Public School,A,,True,NSW Cadastre lots,,11159.1
+8484,Sydney Secondary College Balmain Campus,A,,True,NSW Cadastre lots,,36113.6
+7431,Newtown Public School,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown High of Performing Arts. Drawn round its own building and grounds. The playing field to the south is left out of both schools.,8784.5
+8530,Newtown High School of Performing Arts,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown Public. Drawn round its own buildings. The playing field to the south is left out of both schools.,17453.9
+2766,North Sydney Public School,A,,True,NSW Cadastre lots,,19365.7
+2812,Orange Grove Public School,A,,True,NSW Cadastre lots,,17830.0
+8507,Sydney Secondary College Leichhardt Campus,B,,True,NSW Cadastre lots,"Lot 50//DP1271697 has two parts: the fenced campus is used; the northern part, a field across the street, is left out.",15513.2
+2283,Kensington Public School,A,,True,NSW Cadastre lots,,7117.0
+7436,Stanmore Public School,A,,True,NSW Cadastre lots,,16518.3
+8910,Cammeraygal High School,D,school split across two sites,False,NSW Cadastre lots,"Lot 1//DP782580, the Years 7 to 9 campus at 192 Pacific Highway, Crows Nest (the department point falls on the strata building next door, SP87962). Its Years 10 to 12 campus at 149 West Street is not included, so its grounds per student would be understated: not compared.",6258.4
+7423,Leichhardt Public School,A,,True,NSW Cadastre lots,,15614.0
+1483,Camdenville Public School,A,,True,NSW Cadastre lots,,15482.1
+2730,Neutral Bay Public School,A,,True,NSW Cadastre lots,,8218.7
+8133,North Sydney Girls High School,A,,True,NSW Cadastre lots,,15915.4
+5112,Taverners Hill Infants School,A,,True,NSW Cadastre lots,,2749.3
+8132,North Sydney Boys High School,A,,True,NSW Cadastre lots,,25197.9
+3953,Waverley Public School,B,,True,NSW Cadastre lots,The grassed lot to the north and the treed strip to the west may also be used by the school; only lot 1//DP603457 is used.,7806.6
+1179,Bellevue Hill Public School,A,,True,NSW Cadastre lots,,6988.5
+3032,St Peters Public School,A,,True,NSW Cadastre lots,,19597.7
+4656,Anzac Park Public School,A,,True,NSW Cadastre lots,,9888.5
+1774,Drummoyne Public School,A,,True,NSW Cadastre lots,,9292.8
+8504,Fort Street High School,A,,True,NSW Cadastre lots,,39838.2
+4250,Randwick Public School,B,,True,NSW Cadastre lots,The courts and buildings in the middle of the block may also be the school’s; only the picked lots are used.,11922.8
+7418,Gardeners Road Public School,A,,True,NSW Cadastre lots,,21217.5
+3952,Marrickville Public School,A,,True,NSW Cadastre lots,,19530.9
+2270,Kegworth Public School,B,,True,NSW Cadastre lots,The corner lot to the south-west with a building and a court is left out; the school’s use of it is not clear on the imagery.,6745.0
+2076,Greenwich Public School,A,,True,NSW Cadastre lots,,21398.4
+4543,Wilkins Public School,A,,True,NSW Cadastre lots,,39007.3
+4502,Petersham Public School,A,,True,NSW Cadastre lots,,11831.8
+7407,Bondi Public School,A,,True,NSW Cadastre lots,"One lot, with the field and the building across the lane to the south.",11584.9
+8540,Marrickville High School,A,,True,NSW Cadastre lots,,30584.4
+1485,Cammeray Public School,A,,True,NSW Cadastre lots,,13567.0
+8326,Mosman High School,A,,True,NSW Cadastre lots,,14507.1
+7430,Mosman Public School,A,,True,NSW Cadastre lots,,13311.9
+1372,Bronte Public School,A,,True,NSW Cadastre lots,,5581.9
+2988,Rose Bay Public School,B,,True,NSW Cadastre lots,A treed lot between the field and the north building is left out.,10555.8
+5132,Russell Lea Public School,A,,True,NSW Cadastre lots,,11792.0
+8263,J J Cahill Memorial High School,A,,True,NSW Cadastre lots,,38579.3
+3873,Dobroyd Point Public School,A,,True,NSW Cadastre lots,,10221.8
+8599,Bradfield College,D,outline takes in another campus,False,drawn over NSW Imagery,"Inside the TAFE NSW St Leonards campus (lot 101//DP1075748, 5.4 ha). Drawn round its building only.",1249.4
+2543,Middle Harbour Public School,A,,True,NSW Cadastre lots,,13322.7
+4516,Eastlakes Public School,A,,True,NSW Cadastre lots,,18714.0
+4369,Lewisham Public School,B,,True,NSW Cadastre lots,A lot to the north-east with part of the courts touches the rest only through a sliver lot and is left out; buildings to the west and north may also be the school’s.,4048.9
+2499,Mascot Public School,A,,True,NSW Cadastre lots,,37069.2
+1573,Clovelly Public School,B,,True,NSW Cadastre lots,"Lots north and south-west of the school (trees, a strip between buildings) may also be the school’s; only the picked lots are used.",7648.7
+2930,Rainbow Street Public School,A,,True,NSW Cadastre lots,,18130.6
+8555,Rose Bay Secondary College,A,,True,NSW Cadastre lots,"One lot, with the field to the west.",23958.2
+7413,Daceyville Public School,A,,True,NSW Cadastre lots,,28089.5
+2189,Hunters Hill Public School,A,,True,NSW Cadastre lots,,10059.4
+8833,Dulwich High School of Visual Arts and Design,B,,True,NSW Cadastre lots,The field to the south-east is a separate lot and is left out.,15199.8
+8506,Tempe High School,A,,True,NSW Cadastre lots,,20097.3
+1616,Coogee Public School,A,,True,NSW Cadastre lots,,7935.0
+2117,Haberfield Public School,A,,True,NSW Cadastre lots,"One lot (70//DP1250857), with a grassed strip running south to the next street.",16746.8
+1292,Bondi Beach Public School,A,,True,NSW Cadastre lots,,10997.2
+3948,Tempe Public School,A,,True,NSW Cadastre lots,,17978.1
+2761,Northbridge Public School,A,,True,NSW Cadastre lots,,11871.1
+3129,Summer Hill Public School,A,,True,NSW Cadastre lots,"37 lots: the whole block, with the courts and the field across the lane.",14474.4
+8207,Hunters Hill High School,A,,True,NSW Cadastre lots,"One lot to the water, with the oval.",65908.5

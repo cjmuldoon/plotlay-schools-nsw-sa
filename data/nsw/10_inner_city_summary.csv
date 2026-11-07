@@ -1,5 +1,5 @@
 state,city,level,count_basis,schools_compared,median_m2_per_student,pooled_m2_per_student,schools_under_15_m2,students_2024,ground_ha,students_change_2019_2024_pct
-NSW,Sydney,Primary,headcount,62,27.8,30.3,10,23729.0,71.8,-14.1
-NSW,Sydney,Secondary,headcount,16,29.1,32.2,1,13413.0,43.1,10.4
-NSW,Sydney,Combined,headcount,1,21.7,21.7,0,1244.0,2.7,41.0
-NSW,Sydney,All,headcount,79,27.4,30.7,11,38386.0,117.7,-4.5
+NSW,Sydney,Primary,headcount,62,28.1,30.6,9,23729.0,72.6,-14.1
+NSW,Sydney,Secondary,headcount,16,29.4,32.5,1,13413.0,43.6,10.4
+NSW,Sydney,Combined,headcount,1,21.9,21.9,0,1244.0,2.7,41.0
+NSW,Sydney,All,headcount,79,27.7,31.0,10,38386.0,118.9,-4.5

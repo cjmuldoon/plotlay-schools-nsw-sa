@@ -16,7 +16,7 @@ Close the Filters, Visualizations and Data panes before a shot (**View**, untick
 
 Checks before saving each shot:
 
-- The cards on the NSW page read 80, 27.8, 26.9 and 12, and on the SA page 51, 42.1, 34.2 and 3 (year 2024). Any other figures mean the refresh or the year slicer is wrong.
+- The cards on the NSW page read 79, 28.1, 29.4 and 10, and on the SA page 51, 42.4, 34.4 and 3 (year 2024). Any other figures mean the refresh or the year slicer is wrong.
 - The map bins use the same colours on both pages: darkest red under 15 m², then 15 to 30, 30 to 60, palest 60 or more, grey for schools left out.
 - The spend chart axis runs 0 to 30,000, attendance 40 to 85 and retention 60 to 100 on every page.
 - On the NSW and SA page, NSW is blue and SA ochre in every chart.
