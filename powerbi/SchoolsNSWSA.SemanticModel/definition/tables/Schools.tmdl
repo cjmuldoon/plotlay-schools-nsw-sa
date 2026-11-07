@@ -1,0 +1,278 @@
+table Schools
+	lineageTag: b5fe5259-31dd-3b62-06e0-c1bbabecf0d5
+
+	/// Enrolments for the schools and year in the filter: headcount in NSW, FTE in SA
+	measure Students = SUM ( Enrolments[students] )
+		formatString: #,0
+		lineageTag: 78cfe164-1bdd-6073-3376-17a649cd06ba
+
+	/// Land of the compared schools with students in the year shown, so a school not yet open adds no land
+	measure 'Area m2' =
+			SUMX (
+			    FILTER ( Schools, Schools[in_comparison] && CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ),
+			    Schools[area_m2]
+			)
+		formatString: #,0
+		lineageTag: de44ea58-a9ca-7eb2-adf3-8a5331bb1c28
+
+	/// Students of the compared schools only
+	measure 'Students compared' =
+			SUMX (
+			    FILTER ( Schools, Schools[in_comparison] && CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ),
+			    CALCULATE ( SUM ( Enrolments[students] ) )
+			)
+		formatString: #,0
+		lineageTag: 481a09b7-b58f-333f-07c1-38fe968ae947
+
+	/// All the land of the compared schools divided by all their students
+	measure 'Pooled m2 per student' = DIVIDE ( [Area m2], [Students compared] )
+		formatString: 0.0
+		lineageTag: 9306843a-2831-b1cb-c20d-a0ca465e101a
+
+	/// One school: its land (including buildings) divided by its students. Blank for schools left out of the comparison
+	measure 'm2 per student' = IF ( HASONEVALUE ( Schools[school_id] ), [Pooled m2 per student] )
+		formatString: 0.0
+		lineageTag: 85a6bc5e-1d48-97a2-991c-8b5b3fd29ac9
+
+	/// Compared schools with students in the year shown
+	measure 'Schools compared' = COUNTROWS ( FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ) )
+		formatString: 0
+		lineageTag: a092d8ab-9697-1c85-37c5-a614b7565fa9
+
+	/// Median of the compared schools in the filter, from area_m2 / students
+	measure 'Median m2 per student' =
+			MEDIANX (
+			    FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ),
+			    CALCULATE ( [Pooled m2 per student] )
+			)
+		formatString: 0.0
+		lineageTag: 9bd27921-6ba7-1af4-fd4e-6caa9c11d6ce
+
+	measure 'Median m2 per student primary' = CALCULATE ( [Median m2 per student], Schools[level] = "Primary" )
+		formatString: 0.0
+		lineageTag: 63a88e3b-3da7-b4b8-ed77-e9945f9d9d32
+
+	measure 'Median m2 per student secondary' = CALCULATE ( [Median m2 per student], Schools[level] = "Secondary" )
+		formatString: 0.0
+		lineageTag: 735defe4-46ce-30fc-5747-a892228e1df7
+
+	/// Compared schools with under 15 m² of land per student
+	measure 'Schools under 15 m2' =
+			COUNTROWS (
+			    FILTER ( FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ), CALCULATE ( [Pooled m2 per student] ) < 15 )
+			)
+		formatString: 0
+		lineageTag: 5c849af4-2553-8ff0-6844-f27d35c8c8f1
+
+	measure 'Selected year' = SELECTEDVALUE ( Years[year], 2024 )
+		formatString: 0
+		lineageTag: 06e98748-48aa-c17d-2348-1f7055ed23c2
+
+	column school_id
+		dataType: string
+		lineageTag: ac5fe34b-c021-e2c0-5c9c-c5b282e9b79e
+		summarizeBy: none
+		sourceColumn: school_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column school_key
+		dataType: string
+		lineageTag: ea911291-6320-3a34-cbca-4663b9be1a9b
+		summarizeBy: none
+		sourceColumn: school_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column school_name
+		dataType: string
+		lineageTag: 6815eb9a-8dc8-dab6-f066-fd574b4bdc8b
+		summarizeBy: none
+		sourceColumn: school_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: 7dee31cb-4ab1-328d-77b4-f5d33d17b3f1
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 6e16cc2e-f855-244a-12be-6ccf1c9e4de7
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column level
+		dataType: string
+		lineageTag: 489d9e28-deb5-764d-52cf-2f5c2aee9a46
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = Automatic
+
+	column count_basis
+		dataType: string
+		lineageTag: ec5dab12-94f6-6a8f-8857-df508e211a9f
+		summarizeBy: none
+		sourceColumn: count_basis
+
+		annotation SummarizationSetBy = Automatic
+
+	column suburb
+		dataType: string
+		lineageTag: 855b3b1c-023a-d587-7761-23f0e86e9631
+		summarizeBy: none
+		sourceColumn: suburb
+
+		annotation SummarizationSetBy = Automatic
+
+	column km_from_centre
+		dataType: double
+		formatString: 0.00
+		lineageTag: ff9edaf7-9366-6ced-205a-ce749d0becdb
+		summarizeBy: none
+		sourceColumn: km_from_centre
+
+		annotation SummarizationSetBy = Automatic
+
+	column grade
+		dataType: string
+		lineageTag: b1f8b782-4dd0-610c-3555-ecd6d3b25c19
+		summarizeBy: none
+		sourceColumn: grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column flag
+		dataType: string
+		lineageTag: 1a6f321f-6dac-b11b-a3d0-9404eef4e0f5
+		summarizeBy: none
+		sourceColumn: flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_comparison
+		dataType: boolean
+		lineageTag: 1ab98b5d-5c50-4da7-37b6-dae1b3af9115
+		summarizeBy: none
+		sourceColumn: in_comparison
+
+		annotation SummarizationSetBy = Automatic
+
+	column outline_from
+		dataType: string
+		lineageTag: 9238f37b-057a-ea7c-5ee0-fc662ac5fd0c
+		summarizeBy: none
+		sourceColumn: outline_from
+
+		annotation SummarizationSetBy = Automatic
+
+	column outline_note
+		dataType: string
+		lineageTag: ffe895c3-be92-ad2d-61d0-476389630968
+		summarizeBy: none
+		sourceColumn: outline_note
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_m2
+		dataType: double
+		formatString: #,0
+		lineageTag: 0f1efe2e-f24a-6170-1651-e0f1d5ed9d96
+		summarizeBy: none
+		sourceColumn: area_m2
+
+		annotation SummarizationSetBy = Automatic
+
+	column students_2019
+		dataType: double
+		formatString: #,0
+		lineageTag: 0a79645c-c2e4-c1a7-769c-31e9decb3deb
+		summarizeBy: none
+		sourceColumn: students_2019
+
+		annotation SummarizationSetBy = Automatic
+
+	column students_2024
+		dataType: double
+		formatString: #,0
+		lineageTag: 2a8ea8f4-e75f-d04c-9dac-5c6df5e862a5
+		summarizeBy: none
+		sourceColumn: students_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column m2_per_student_2024
+		dataType: double
+		formatString: 0.0
+		lineageTag: 18e3a390-4ec0-dbf4-d649-bec62c1cfc9e
+		summarizeBy: none
+		sourceColumn: m2_per_student_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column m2_band_2024
+		dataType: string
+		isHidden
+		lineageTag: eb5f4644-632a-72bf-78cd-fe9c86a88a6e
+		summarizeBy: none
+		sourceColumn: m2_band_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column m2_band_label
+		dataType: string
+		lineageTag: 459ec354-2714-d8d8-ff43-224561170191
+		summarizeBy: none
+		sourceColumn: m2_band_label
+		sortByColumn: m2_band_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column nsw_only_icsea
+		dataType: double
+		formatString: 0
+		lineageTag: 90e7785c-d5e2-284e-6e25-2c01306ea356
+		summarizeBy: none
+		sourceColumn: nsw_only_icsea
+
+		annotation SummarizationSetBy = Automatic
+
+	column nsw_only_ram_per_student_2024
+		dataType: double
+		formatString: $#,0
+		lineageTag: 308d93cc-f101-a445-fa3a-86290b4e8718
+		summarizeBy: none
+		sourceColumn: nsw_only_ram_per_student_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Schools = m
+		mode: import
+		source =
+				let
+				    TypedSource = Csv.Document(GetFile("comparison/07_inner_city_schools.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    TypedPromoted = Table.PromoteHeaders(TypedSource, [PromoteAllScalars = true]),
+				    TypedKept = Table.SelectColumns(TypedPromoted, {"school_key", "school_name", "state", "city", "level", "count_basis", "suburb", "km_from_centre", "grade", "flag", "in_comparison", "outline_from", "outline_note", "area_m2", "students_2019", "students_2024", "m2_per_student_2024"}),
+				    Typed = Table.TransformColumnTypes(TypedKept, {{"school_key", type text}, {"school_name", type text}, {"state", type text}, {"city", type text}, {"level", type text}, {"count_basis", type text}, {"suburb", type text}, {"km_from_centre", type number}, {"grade", type text}, {"flag", type text}, {"in_comparison", type logical}, {"outline_from", type text}, {"outline_note", type text}, {"area_m2", type number}, {"students_2019", type number}, {"students_2024", type number}, {"m2_per_student_2024", type number}}, "en-AU"),
+				    Keyed = Table.AddColumn(Typed, "school_id", each [state] & "-" & [school_key], type text),
+				    Banded = Table.AddColumn(Keyed, "m2_band_2024", each let v = [m2_per_student_2024] in if not [in_comparison] or v = null then "5 not compared" else if v < 15 then "1 under 15" else if v < 30 then "2 15 to 30" else if v < 60 then "3 30 to 60" else "4 60 or more", type text),
+				    Labelled = Table.AddColumn(Banded, "m2_band_label", each Text.Middle([m2_band_2024], 2), type text),
+				    NswSource = Csv.Document(GetFile("nsw/07_inner_city_schools.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    NswPromoted = Table.PromoteHeaders(NswSource, [PromoteAllScalars = true]),
+				    NswKept = Table.SelectColumns(NswPromoted, {"school_key", "nsw_only_icsea", "nsw_only_ram_per_student_2024"}),
+				    Nsw = Table.TransformColumnTypes(NswKept, {{"school_key", type text}, {"nsw_only_icsea", type number}, {"nsw_only_ram_per_student_2024", type number}}, "en-AU"),
+				    NswKeyed = Table.AddColumn(Nsw, "nsw_id", each "NSW-" & [school_key], type text),
+				    Joined = Table.NestedJoin(Labelled, {"school_id"}, NswKeyed, {"nsw_id"}, "nsw", JoinKind.LeftOuter),
+				    Expanded = Table.ExpandTableColumn(Joined, "nsw", {"nsw_only_icsea", "nsw_only_ram_per_student_2024"}),
+				    Out = Table.TransformColumnTypes(Expanded, {{"nsw_only_icsea", type number}, {"nsw_only_ram_per_student_2024", type number}}, "en-AU")
+				in
+				    Out
+
+	annotation PBI_ResultType = Table

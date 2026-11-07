@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "072926abee16c8fed501",
+  "position": {
+    "x": 40,
+    "y": 110,
+    "z": 1,
+    "height": 300,
+    "width": 900,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "States"
+                    }
+                  },
+                  "Property": "state"
+                }
+              },
+              "queryRef": "States.state",
+              "nativeQueryRef": "state",
+              "displayName": "State"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Schools compared"
+                }
+              },
+              "queryRef": "Schools.Schools compared",
+              "nativeQueryRef": "Schools compared",
+              "displayName": "Schools compared"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Median m2 per student primary"
+                }
+              },
+              "queryRef": "Schools.Median m2 per student primary",
+              "nativeQueryRef": "Median m2 per student primary",
+              "displayName": "Median m², primary"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Median m2 per student secondary"
+                }
+              },
+              "queryRef": "Schools.Median m2 per student secondary",
+              "nativeQueryRef": "Median m2 per student secondary",
+              "displayName": "Median m², secondary"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Pooled m2 per student"
+                }
+              },
+              "queryRef": "Schools.Pooled m2 per student",
+              "nativeQueryRef": "Pooled m2 per student",
+              "displayName": "Pooled m² per student"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Schools under 15 m2"
+                }
+              },
+              "queryRef": "Schools.Schools under 15 m2",
+              "nativeQueryRef": "Schools under 15 m2",
+              "displayName": "Under 15 m²"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Students compared"
+                }
+              },
+              "queryRef": "Schools.Students compared",
+              "nativeQueryRef": "Students compared",
+              "displayName": "Students"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'The two cities in the enrolment year shown'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

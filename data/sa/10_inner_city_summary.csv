@@ -1,0 +1,5 @@
+state,city,level,count_basis,schools_compared,median_m2_per_student,pooled_m2_per_student,schools_under_15_m2,students_2024,ground_ha,students_change_2019_2024_pct,median_with_adjoining_ovals,pooled_with_adjoining_ovals
+SA,Adelaide,Primary,FTE,39,42.1,50.6,0,16452.1,83.3,-12.2,45.8,58.0
+SA,Adelaide,Secondary,FTE,11,34.2,34.0,3,13285.5,45.1,27.5,43.8,39.2
+SA,Adelaide,Combined,FTE,1,51.6,51.6,0,148.0,0.8,63.5,51.6,51.6
+SA,Adelaide,All,FTE,51,42.1,43.2,3,29885.6,129.2,4.2,45.6,49.6

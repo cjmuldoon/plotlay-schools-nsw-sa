@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "3d017a11a6a5d60f2241",
+  "position": {
+    "x": 40,
+    "y": 24,
+    "z": 0,
+    "height": 70,
+    "width": 1100,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "NSW: LAND PER STUDENT AT INNER SYDNEY GOVERNMENT SCHOOLS",
+                    "textStyle": {
+                      "fontSize": "22pt",
+                      "color": "#163c6e",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "School land from outlines made in Plotlay. Enrolments are headcount. The year slicer sets the cards and the table; the map shows 2024.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#5b6573"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

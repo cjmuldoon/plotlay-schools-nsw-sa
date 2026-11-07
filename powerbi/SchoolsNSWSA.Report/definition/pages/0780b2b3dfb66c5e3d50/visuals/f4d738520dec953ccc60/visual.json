@@ -1,0 +1,109 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "f4d738520dec953ccc60",
+  "position": {
+    "x": 1540,
+    "y": 415,
+    "z": 1,
+    "height": 595,
+    "width": 340,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "school_name"
+                }
+              },
+              "queryRef": "Schools.school_name",
+              "nativeQueryRef": "school_name",
+              "displayName": "School"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "nsw_only_icsea"
+                }
+              },
+              "queryRef": "Schools.nsw_only_icsea",
+              "nativeQueryRef": "nsw_only_icsea",
+              "displayName": "ICSEA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "nsw_only_ram_per_student_2024"
+                }
+              },
+              "queryRef": "Schools.nsw_only_ram_per_student_2024",
+              "nativeQueryRef": "nsw_only_ram_per_student_2024",
+              "displayName": "RAM per student 2024"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Schools"
+                  }
+                },
+                "Property": "nsw_only_icsea"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ICSEA and equity (RAM) funding per student: NSW only, no SA equivalent published'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

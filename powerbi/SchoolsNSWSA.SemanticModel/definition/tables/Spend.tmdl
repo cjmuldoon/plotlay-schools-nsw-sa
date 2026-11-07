@@ -1,0 +1,64 @@
+table Spend
+	lineageTag: f3a47df3-42bb-5dcd-c82e-e8987fde397d
+
+	/// RoGS real recurrent spend per FTE government school student, 2023-24 dollars
+	measure 'Spend per student' = SUM ( Spend[spend] )
+		formatString: $#,0
+		lineageTag: 74d77d47-68d7-c037-6627-b260d839d9e4
+
+	column financial_year
+		dataType: string
+		lineageTag: 3b8151fd-7b73-3a5e-00be-983ed4224937
+		summarizeBy: none
+		sourceColumn: financial_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column school_level
+		dataType: string
+		lineageTag: 6323c5df-94db-1a60-626d-4a91b4df9f2b
+		summarizeBy: none
+		sourceColumn: school_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column component
+		dataType: string
+		lineageTag: c3df9ff3-f9af-6d55-8629-056cda889ea2
+		summarizeBy: none
+		sourceColumn: component
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		isHidden
+		lineageTag: 0a556e06-fae1-7e75-d339-70cf27877fb7
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column spend
+		dataType: double
+		formatString: $#,0
+		lineageTag: 4804d239-9ac0-ac70-8904-21691b230620
+		summarizeBy: none
+		sourceColumn: spend
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Spend = m
+		mode: import
+		source =
+				let
+				    TypedSource = Csv.Document(GetFile("comparison/01_spend_per_student_components.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    TypedPromoted = Table.PromoteHeaders(TypedSource, [PromoteAllScalars = true]),
+				    TypedKept = Table.SelectColumns(TypedPromoted, {"financial_year", "school_level", "component", "NSW", "SA"}),
+				    Typed = Table.TransformColumnTypes(TypedKept, {{"financial_year", type text}, {"school_level", type text}, {"component", type text}, {"NSW", type number}, {"SA", type number}}, "en-AU"),
+				    Long = Table.Unpivot(Typed, {"NSW", "SA"}, "state", "spend"),
+				    Out = Table.TransformColumnTypes(Long, {{"state", type text}, {"spend", type number}}, "en-AU")
+				in
+				    Out
+
+	annotation PBI_ResultType = Table

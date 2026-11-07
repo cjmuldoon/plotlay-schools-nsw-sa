@@ -1,0 +1,65 @@
+table NAPLAN
+	lineageTag: 984ddab0-de52-8aa2-e014-1392b5a13d6b
+
+	/// ACARA NAPLAN mean scale score, all students in the state, 2023 onwards scale
+	measure 'Mean scale score' = AVERAGE ( NAPLAN[score] )
+		formatString: 0.0
+		lineageTag: 16c2e071-a7f1-1773-ce92-72bb5216ba6e
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: e75912a0-85bf-ff25-eadd-39d7425de71a
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column domain
+		dataType: string
+		lineageTag: 25e6b608-8923-dfe4-66e3-6d56cf59f28c
+		summarizeBy: none
+		sourceColumn: domain
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_level
+		dataType: string
+		lineageTag: be084429-ebeb-0c26-b9b4-24c4257b9a92
+		summarizeBy: none
+		sourceColumn: year_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		isHidden
+		lineageTag: fe3f295d-ac2c-0092-5da6-8bc48cefdc73
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column score
+		dataType: double
+		formatString: 0.0
+		lineageTag: 45a5022a-d7ba-9ff6-4319-555c05a351d2
+		summarizeBy: none
+		sourceColumn: score
+
+		annotation SummarizationSetBy = Automatic
+
+	partition NAPLAN = m
+		mode: import
+		source =
+				let
+				    TypedSource = Csv.Document(GetFile("comparison/06c_naplan_2023_2026_mean_new_scale.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    TypedPromoted = Table.PromoteHeaders(TypedSource, [PromoteAllScalars = true]),
+				    TypedKept = Table.SelectColumns(TypedPromoted, {"year", "domain", "year_level", "NSW", "SA"}),
+				    Typed = Table.TransformColumnTypes(TypedKept, {{"year", Int64.Type}, {"domain", type text}, {"year_level", type text}, {"NSW", type number}, {"SA", type number}}, "en-AU"),
+				    Long = Table.Unpivot(Typed, {"NSW", "SA"}, "state", "score"),
+				    Out = Table.TransformColumnTypes(Long, {{"state", type text}, {"score", type number}}, "en-AU")
+				in
+				    Out
+
+	annotation PBI_ResultType = Table

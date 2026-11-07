@@ -1,0 +1,23 @@
+relationship 1e041dc0-4126-4cd9-f441-fd3d03f876db
+	fromColumn: Enrolments.school_id
+	toColumn: Schools.school_id
+
+relationship e1dd0629-861e-90b3-d733-65edf0e98b19
+	fromColumn: Enrolments.year
+	toColumn: Years.year
+
+relationship 5251ef66-47e7-7571-7c79-1a5a19d61fa5
+	fromColumn: Schools.state
+	toColumn: States.state
+
+relationship e91f4364-5a9a-461a-5cc7-cab256a94bb7
+	fromColumn: Spend.state
+	toColumn: States.state
+
+relationship 27004836-8aae-8e40-f232-9e568062d839
+	fromColumn: Outcomes.state
+	toColumn: States.state
+
+relationship 3b857e70-028d-daf4-f274-4e003def3849
+	fromColumn: NAPLAN.state
+	toColumn: States.state

@@ -1,0 +1,65 @@
+table Outcomes
+	lineageTag: d0835552-ae6e-546f-8244-56d08ae34301
+
+	/// RoGS attendance and retention, government schools, per cent
+	measure 'Outcome %' = AVERAGE ( Outcomes[value] )
+		formatString: 0.0
+		lineageTag: 32692e8e-bb63-ec31-4444-8ff131ba5e38
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dd25910-d429-1cff-8669-cd042e1f158e
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column metric
+		dataType: string
+		lineageTag: 9ef6bf8b-31f4-fb7b-ba69-345663809e8f
+		summarizeBy: none
+		sourceColumn: metric
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit
+		dataType: string
+		lineageTag: 10c53286-8119-3690-84ad-96da63ef356a
+		summarizeBy: none
+		sourceColumn: unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		isHidden
+		lineageTag: 848504f7-a8a6-40af-e685-3f87f8865625
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: double
+		formatString: 0.0
+		lineageTag: 17a43d27-c77d-8e8c-532f-07a9254e622c
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Outcomes = m
+		mode: import
+		source =
+				let
+				    TypedSource = Csv.Document(GetFile("comparison/05_attendance_retention_attainment.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    TypedPromoted = Table.PromoteHeaders(TypedSource, [PromoteAllScalars = true]),
+				    TypedKept = Table.SelectColumns(TypedPromoted, {"year", "metric", "unit", "NSW", "SA"}),
+				    Typed = Table.TransformColumnTypes(TypedKept, {{"year", Int64.Type}, {"metric", type text}, {"unit", type text}, {"NSW", type number}, {"SA", type number}}, "en-AU"),
+				    Long = Table.Unpivot(Typed, {"NSW", "SA"}, "state", "value"),
+				    Out = Table.TransformColumnTypes(Long, {{"state", type text}, {"value", type number}}, "en-AU")
+				in
+				    Out
+
+	annotation PBI_ResultType = Table

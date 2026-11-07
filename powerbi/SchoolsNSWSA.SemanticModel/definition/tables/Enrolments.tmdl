@@ -1,0 +1,62 @@
+table Enrolments
+	lineageTag: 4310bfa6-36c2-407f-ad27-e55f92392c8c
+
+	column school_key
+		dataType: string
+		isHidden
+		lineageTag: ad4738ea-d719-03b1-c8a4-7aa3693008d1
+		summarizeBy: none
+		sourceColumn: school_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 1551c856-552c-9b40-a2f3-7e545285f5d6
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column students
+		dataType: double
+		formatString: #,0
+		lineageTag: ab375909-82a0-a8e0-6a91-682e44e2e738
+		summarizeBy: none
+		sourceColumn: students
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		isHidden
+		lineageTag: 72f80136-fecd-42d2-4bfc-d46b95373049
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column school_id
+		dataType: string
+		isHidden
+		lineageTag: 512b5bf3-a506-8310-f48b-7e89d22b916e
+		summarizeBy: none
+		sourceColumn: school_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Enrolments = m
+		mode: import
+		source =
+				let
+				    TypedSource = Csv.Document(GetFile("comparison/08_inner_city_enrolments_2015_2024.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    TypedPromoted = Table.PromoteHeaders(TypedSource, [PromoteAllScalars = true]),
+				    TypedKept = Table.SelectColumns(TypedPromoted, {"school_key", "year", "students", "state"}),
+				    Typed = Table.TransformColumnTypes(TypedKept, {{"school_key", type text}, {"year", Int64.Type}, {"students", type number}, {"state", type text}}, "en-AU"),
+				    Keyed = Table.AddColumn(Typed, "school_id", each [state] & "-" & [school_key], type text)
+				in
+				    Keyed
+
+	annotation PBI_ResultType = Table

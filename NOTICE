@@ -1,0 +1,90 @@
+Government schools, NSW and SA: grounds, spending, budgets and outcomes.
+Copyright 2026 Craig Muldoon. Made with Plotlay (https://www.getplotlay.com).
+
+This repository contains code, data we made, and data from the sources below. It has three views: NSW on its own,
+SA on its own with the same method, definitions and charts, and NSW and SA side by side. SA material appears only
+alongside the identical NSW analysis.
+
+CODE
+  The notebook, the Power BI project (its Power Query, DAX and report files) and any scripts are licensed under the
+  MIT licence (LICENSE).
+
+DATA WE MADE
+  The school outlines (data/nsw/*outlines*, data/sa/*outlines*, data/comparison/outlines_both_cities.geojson), the
+  joined inner-city tables (07 to 10 in each data folder), the outline checklists and the charts in visuals/ are
+  licensed under Creative Commons Attribution 4.0 International (LICENSE-DATA). Please credit: "School outlines and
+  tables: Plotlay (getplotlay.com), from NSW, SA and Australian Government open data". They are made from the sources
+  below, whose credits also apply.
+
+UPSTREAM SOURCES
+
+  School spending, staffing, assets, attendance and retention
+    Based on Steering Committee for the Review of Government Service Provision data, Report on Government Services
+    2026, Part B section 4 School education (Productivity Commission). Licensed under CC BY 4.0, with the exception
+    of the Commonwealth Coat of Arms and content supplied by third parties.
+    https://www.pc.gov.au/ongoing/report-on-government-services
+    Changes: reshaped to one row per state, year and measure; NSW and SA kept, Victoria and Australia as reference.
+
+  NAPLAN results
+    Australian Curriculum, Assessment and Reporting Authority (ACARA), NAPLAN national results 2008 to 2022 and
+    2023 to 2026. Licensed under CC BY 4.0. https://www.acara.edu.au/contact-us/copyright
+    Results before and after 2023 are on different scales and are kept apart. All school sectors. The NAP and ACARA
+    logos are not used.
+
+  Budget papers
+    NSW Treasury, NSW Budget 2025-26 and 2026-27 (CC BY 4.0). Government of South Australia, 2026-27 Budget Paper 4
+    Agency Statements (CC BY 4.0). State of Victoria, Department of Treasury and Finance, 2026-27 Department
+    Performance Statement (CC BY 4.0). Australian Government Department of Education and National School Resourcing
+    Board, Better and Fairer Schools Agreement progress report and section 22A review (CC BY 4.0). Cited for totals
+    and shares; figures nominal.
+
+  NSW school data
+    NSW Department of Education (Centre for Education Statistics and Evaluation), data.nsw.gov.au. Licensed under
+    Creative Commons Attribution (CC BY), as stated on each dataset page.
+    - NSW public schools master dataset (school code, name, location, type, ICSEA)
+    - NSW government school enrolments by head count (2015 to 2024 used)
+    - NSW public schools Resource Allocation Model (RAM) funding by school, 2024 after adjustments
+    Changes: reshaped to one row per school per year; contact columns removed. ICSEA is ACARA's index as republished
+    by NSW in the master dataset. ICSEA and RAM are shown in the NSW view only: no SA equivalent is published.
+
+  SA school data
+    Department for Education, Government of South Australia, data.sa.gov.au. Licensed under CC BY 4.0.
+    - SA government enrolments by school (Term 3 FTE, 2015 to 2024 used)
+    - SA government preschool and school sites 2023 (points used to pick each school's polygon)
+    Changes: a school renamed between years has one row per name under one school number; the years are added up by
+    school number.
+
+  NSW cadastre and aerial imagery
+    © State of New South Wales (Spatial Services, a business unit of the Department of Customer Service NSW).
+    Licensed under Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU),
+    https://creativecommons.org/licenses/by/3.0/au/
+    - NSW Cadastre: the inner Sydney outlines are unions of the cadastre lots picked for each school in Plotlay.
+    - NSW Imagery: 5 outlines where two schools share one lot were drawn over it. No imagery tiles are included.
+
+  SA land use
+    SA Land Use Generalised 2025, Department for Housing and Urban Development, Government of South Australia,
+    data.sa.gov.au/data/dataset/land-use-generalised. The data.sa.gov.au record states CC BY 4.0; the download's
+    License.txt states Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU). The inner Adelaide outlines are the
+    EDUCATION polygons under each school's point, used as released (dissolved valuation parcels); individual lots are
+    not reconstructed.
+
+  City of Adelaide parcels
+    Property Boundaries, City of Adelaide, data.sa.gov.au/data/dataset/property-boundaries. Licensed under CC BY 4.0.
+    Used for Gilles Street Primary School (the four parcels that name it).
+
+  DEW rasters
+    Metropolitan Adelaide 2022 green space and building rasters (0.5 m), Department for Environment and Water,
+    Government of South Australia. Licensed under CC BY 4.0 ("AusGOAL CC BY (Attribution)"). Used to draw two edges
+    of the Unley High School outline, where one land-use polygon also holds Urrbrae Agricultural High, TAFE SA and
+    Waite land. No raster data is included.
+
+NOT INCLUDED
+  Nothing in this repository is derived from OpenStreetMap. No Google, Nearmap, Esri or Mapbox imagery was used.
+  The SA cadastre and Location SA imagery were not used (they are not open data). ACARA's School Profile, School
+  Location and My School content (per-school ICSEA for SA, per-school finance, per-school NAPLAN) are not used.
+  No coat of arms or agency logo is used, and nothing here implies endorsement by any of these agencies.
+
+THIRD-PARTY SOFTWARE
+  The notebook uses pandas, GeoPandas, Shapely, pyproj and Matplotlib (installed from requirements.txt, each under its
+  own licence). Fonts in the visuals: IBM Plex Sans, IBM Plex Sans Condensed and IBM Plex Mono, SIL Open Font License
+  1.1.

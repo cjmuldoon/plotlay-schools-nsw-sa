@@ -1,0 +1,55 @@
+table States
+	lineageTag: b8464cdd-84b5-f068-ad72-bf5c4f32163d
+
+	column state
+		dataType: string
+		lineageTag: f7a372c7-4010-575b-129f-b66cb376ef69
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_name
+		dataType: string
+		lineageTag: 4e0db0f3-78c0-589d-98c5-772e76dd0513
+		summarizeBy: none
+		sourceColumn: state_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: a7c5ea56-585d-ef01-f833-bb67469c202e
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column count_basis
+		dataType: string
+		lineageTag: 975348ad-c196-0f59-f48c-cf45779cda2e
+		summarizeBy: none
+		sourceColumn: count_basis
+
+		annotation SummarizationSetBy = Automatic
+
+	column colour
+		dataType: string
+		isHidden
+		lineageTag: fd951fca-2eba-f60d-a033-9ff153f9fddf
+		summarizeBy: none
+		sourceColumn: colour
+
+		annotation SummarizationSetBy = Automatic
+
+	partition States = m
+		mode: import
+		source =
+				let
+				    Source = #table(type table [state = text, state_name = text, city = text, count_basis = text, colour = text], {
+				        {"NSW", "New South Wales", "Sydney", "headcount", "#1d4f91"},
+				        {"SA", "South Australia", "Adelaide", "FTE", "#c0702a"}})
+				in
+				    Source
+
+	annotation PBI_ResultType = Table

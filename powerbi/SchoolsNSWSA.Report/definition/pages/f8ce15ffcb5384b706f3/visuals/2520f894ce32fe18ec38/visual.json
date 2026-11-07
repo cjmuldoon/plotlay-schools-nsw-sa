@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "2520f894ce32fe18ec38",
+  "position": {
+    "x": 40,
+    "y": 1030,
+    "z": 99,
+    "height": 40,
+    "width": 1840,
+    "tabOrder": 99
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Data: Productivity Commission RoGS 2026, ACARA, NSW Department of Education, Department for Education SA (CC BY). Outlines made in Plotlay from NSW Cadastre (Spatial Services NSW, CC BY 3.0 AU) and SA Land Use Generalised 2025, City of Adelaide parcels and DEW 2022 rasters (CC BY).",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#5b6573"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

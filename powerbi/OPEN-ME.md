@@ -1,0 +1,71 @@
+# Opening the Power BI report
+
+`SchoolsNSWSA.pbip` is a Power BI Project: the report (`SchoolsNSWSA.Report`, PBIR format) and the semantic model (`SchoolsNSWSA.SemanticModel`, TMDL) saved as text, so the repo shows every change. Power BI Desktop opens it like a `.pbix`.
+
+The report has three pages, in this order:
+
+1. **NSW**: inner Sydney government schools on their own.
+2. **SA**: inner Adelaide government schools on their own, with the same visuals in the same places as the NSW page.
+3. **NSW and SA**: the two side by side, with the state as the legend (NSW blue, SA ochre).
+
+Every page has a **State** slicer and an **Enrolment year** slicer. The NSW page is filtered to NSW and the SA page to SA (a page filter, so the slicer there lists one state). On the NSW and SA page the State slicer starts with nothing picked, which shows both; pick one to see it alone. The year slicer starts on 2024 and sets the cards and the school tables. The maps always show 2024, and the state-wide lines (spend, attendance, retention) show every year.
+
+## What you need
+
+- Power BI Desktop for Windows, a recent version (2026). Projects and the PBIR report format are standard in current versions. If Desktop is older than about mid 2025, turn on **File, Options and settings, Options, Preview features, Power BI Project (.pbip) save option** and **Store reports using enhanced metadata format (PBIR)**, then restart Desktop.
+- The repo folder on the Windows machine. In Parallels the Mac home folder is shared, usually as `\\Mac\Home`, so a clone in your home folder is at `\\Mac\Home\plotlay-schools-nsw-sa` (or wherever you cloned it).
+
+## Open it
+
+1. In Windows, open File Explorer and go to the repo's `powerbi` folder.
+2. Double-click `SchoolsNSWSA.pbip`. If Windows asks which app, choose Power BI Desktop. Or in Desktop: **File, Open report, Browse reports**, set the file type to *Power BI project files (\*.pbip)* and pick it.
+3. The report opens with empty visuals the first time, because nothing has been loaded yet. Select **Refresh** on the Home ribbon.
+   - By default the data is read from the repo's public copy on GitHub (`DataFolder` is `https://raw.githubusercontent.com/cjmuldoon/plotlay-schools-nsw-sa/main/data/`). If Desktop asks how to connect to that address, choose **Anonymous** and **Connect**.
+   - To read the files from the folder on disk instead (no internet, or before the repo is public): **Home, Transform data, Edit parameters**, set `DataFolder` to the full path of the repo's `data` folder **ending with a backslash**, for example `\\Mac\Home\plotlay-schools-nsw-sa\data\`, then **OK** and **Apply changes**. Power BI can't use a path relative to the project file, so this one parameter is the only place a folder is named.
+   - If Desktop warns about privacy levels, choose **Ignore privacy levels** for this file (all the sources are public open data) or set the sources to Public.
+4. With the year slicer on 2024 the cards should read:
+
+   | Page | Schools compared | Median m² per student, primary | Median m² per student, secondary | Schools under 15 m² |
+   |---|---|---|---|---|
+   | NSW | 80 | 27.8 | 26.9 | 12 |
+   | SA | 51 | 42.1 | 34.2 | 3 |
+
+   These are the figures in `data/comparison/10_inner_city_summary.csv`. If they match, the tables are joined correctly.
+
+## How the model fits together
+
+- `Schools` has one row per school for both states (`comparison/07_inner_city_schools.csv`). School codes are numbers that can be the same in NSW and SA, so every join uses `school_id`, made in Power Query as state, a hyphen and the code (`NSW-3305`, `SA-120`). The two NSW-only columns (`nsw_only_icsea`, `nsw_only_ram_per_student_2024`) are joined in from `nsw/07_inner_city_schools.csv` and are blank for SA schools.
+- `Enrolments` (`comparison/08_...`) joins to `Schools` on `school_id` and to `Years` on `year`.
+- `Spend`, `Outcomes` and `NAPLAN` come from the wide RoGS and ACARA tables (`01_...`, `05_...`, `06c_...`): Power Query keeps the NSW and SA columns and unpivots them into a `state` column. They are not joined to `Years`, so the year slicer leaves those lines alone.
+- `States` (NSW, SA) filters everything: the slicers and legends use `States[state]`.
+- Measures: `Students`, `Area m2`, `Students compared`, `Pooled m2 per student`, `m2 per student`, `Schools compared`, `Median m2 per student` (and its primary and secondary versions) and `Schools under 15 m2`. A school counts in the comparison when `in_comparison` is true and it has students in the year shown; its figure is `area_m2 / students`.
+
+## The two maps: one setting Power BI asks for by hand
+
+Power BI keeps a custom map file inside the report only once you have chosen it in Desktop, so do this once on each state page and save:
+
+- **NSW page.** Select the map, then **Format visual, Visual, Map settings**: Map type **Custom map**, **Add map type** (or Browse), choose `..\data\nsw\sydney_outlines_from_plotlay.topojson`. Under **View map keys** you should see school codes (3305, 3935...) matched. Projection: Mercator.
+- **SA page.** The same, with `..\data\sa\adelaide_outlines_from_plotlay.topojson` (codes such as 120, 1881).
+
+The colours are fixed bins of m² of land per student in 2024: under 15, 15 to 30, 30 to 60, 60 or more, and grey for schools left out of the comparison. They are set per legend value, so both pages use the same colour for the same bin. If the Shape Map is not in the Visualizations pane at all, turn it on in **Options, Preview features, Shape map visual**. If a map comes up empty after opening (Power BI sometimes drops the fields of a map it can't draw yet), drag them back: Location `Schools[school_key]`, Legend `Schools[m2_band_label]`.
+
+The NSW and SA page has no map: the two cities are about 1,160 km apart, so one map would show two dots. Its charts compare the same measures instead.
+
+Then **File, Save**. Desktop writes your choices back into the project folder.
+
+## Save a .pbix too
+
+A `.pbix` is a single file anyone can open, but only Power BI Desktop can write one. After the refresh and the two map settings: **File, Save as**, set the file type to **Power BI file (\*.pbix)**, and save it as `powerbi\SchoolsNSWSA.pbix` next to the project. It includes the data, so it opens without a refresh.
+
+## Publish (only if you choose to)
+
+1. **Home, Publish**, sign in, pick a workspace.
+2. In the Power BI service, open the semantic model's **Settings, Data source credentials**: the GitHub address uses **Anonymous**. Scheduled refresh then works with no gateway, because the data is read from the public GitHub copy.
+3. **Publish to web** makes a public embed link. It is turned off in many organisations, and anyone with the link can see the report. Only use it if you intend the report to be public.
+
+## What's in the folder
+
+- `SchoolsNSWSA.pbip`: open this.
+- `SchoolsNSWSA.SemanticModel/definition/`: `tables/*.tmdl` (columns, measures, Power Query), `relationships.tmdl`, `expressions.tmdl` (the `DataFolder` parameter and a small `GetFile` function).
+- `SchoolsNSWSA.Report/definition/`: one folder per page and visual (PBIR), `report.json` (the Plotlay theme registered), `StaticResources/RegisteredResources/Plotlay_drafting_film.json` (the theme).
+- `SHOT-LIST.md`: the screenshots to take for the showcase page and the video.
