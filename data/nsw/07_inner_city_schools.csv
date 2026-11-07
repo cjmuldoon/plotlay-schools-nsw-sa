@@ -1,87 +1,87 @@
-school_key,school_name,state,city,level,count_basis,suburb,km_from_centre,grade,flag,in_comparison,outline_from,outline_note,area_m2,students_2019,students_2024,m2_per_student_2024,nsw_only_icsea,nsw_only_ram_2024,nsw_only_ram_per_student_2024
-3305,Ultimo Public School,NSW,Sydney,Primary,headcount,Ultimo,1.09,A,,True,NSW Cadastre lots,,5294.0,314.0,478.0,11.1,1088.0,550038.0,1151.0
-3935,Crown Street Public School,NSW,Sydney,Primary,headcount,Surry Hills,1.31,A,,True,NSW Cadastre lots,,6210.8,292.0,318.0,19.5,1114.0,306372.0,963.0
-8147,Conservatorium High School,NSW,Sydney,Secondary,headcount,Sydney,1.31,D,outline takes in another campus,False,NSW Cadastre lots,"Lot 1//DP832310, the Greenway building, which it shares with the Sydney Conservatorium of Music.",4007.7,151.0,151.0,,1194.0,169706.0,1124.0
-4551,Plunkett Street Public School,NSW,Sydney,Primary,headcount,Woolloomooloo,1.33,D,shared outline,False,NSW Cadastre lots,Its lot (2//DP866026) is shared with the distance education school next door.,7845.9,60.0,75.0,,968.0,191766.0,2557.0
-1937,Fort Street Public School,NSW,Sydney,Primary,headcount,Millers Point,1.42,A,,True,NSW Cadastre lots,Its lot covers the whole Observatory Hill site inside the ring road.,4497.9,215.0,292.0,15.4,1094.0,509194.0,1744.0
-8539,Sydney Secondary College Blackwattle Bay Campus,NSW,Sydney,Secondary,headcount,Glebe,1.65,A,,True,NSW Cadastre lots,,29873.3,777.0,805.0,37.1,1094.0,722365.0,897.0
-7414,Darlinghurst Public School,NSW,Sydney,Primary,headcount,Potts Point,1.71,A,,True,NSW Cadastre lots,,5838.3,322.0,243.0,24.0,1156.0,305601.0,1258.0
-8913,Inner Sydney High School,NSW,Sydney,Secondary,headcount,Surry Hills,1.8,A,,True,NSW Cadastre lots,,5628.1,,999.0,5.6,1104.0,671549.0,672.0
-7419,Glebe Public School,NSW,Sydney,Primary,headcount,Glebe,1.82,A,,True,NSW Cadastre lots,Three lots including the grassed block on the north side.,8012.9,309.0,238.0,33.7,982.0,476528.0,2002.0
-7408,Bourke Street Public School,NSW,Sydney,Primary,headcount,Surry Hills,2.12,A,,True,NSW Cadastre lots,,5762.3,436.0,391.0,14.7,1135.0,292742.0,749.0
-2749,Nicholson Street Public School,NSW,Sydney,Primary,headcount,Balmain East,2.28,B,,True,NSW Cadastre lots,A 267 m² lot that does not touch the rest (11//DP879298) is left out.,3876.1,168.0,93.0,41.7,1151.0,66688.0,717.0
-2009,Glenmore Road Public School,NSW,Sydney,Primary,headcount,Paddington,2.41,A,,True,NSW Cadastre lots,,7996.0,364.0,301.0,26.6,1176.0,195043.0,648.0
-8137,Sydney Boys High School,NSW,Sydney,Secondary,headcount,MOORE PARK,2.42,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Girls High. Drawn: the lot split along a line between the two schools’ buildings.,37644.3,1208.0,1202.0,31.3,1189.0,603209.0,502.0
-1932,Forest Lodge Public School,NSW,Sydney,Primary,headcount,Forest Lodge,2.47,A,,True,NSW Cadastre lots,,6924.8,340.0,309.0,22.4,1161.0,345183.0,1117.0
-7404,Balmain Public School,NSW,Sydney,Primary,headcount,BALMAIN,2.61,A,,True,NSW Cadastre lots,,3448.4,379.0,335.0,10.3,1172.0,310504.0,927.0
-1735,Darlington Public School,NSW,Sydney,Primary,headcount,Chippendale,2.66,A,,True,NSW Cadastre lots,Its lot includes the marked playing field.,7176.8,206.0,146.0,49.2,1030.0,381841.0,2615.0
-8138,Sydney Girls High School,NSW,Sydney,Secondary,headcount,Surry Hills,2.68,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Boys High. Drawn: the lot split along a line between the two schools’ buildings.,19723.1,924.0,938.0,21.0,1193.0,358039.0,382.0
-7432,Paddington Public School,NSW,Sydney,Primary,headcount,Paddington,2.74,A,,True,NSW Cadastre lots,,4402.6,291.0,146.0,30.2,1155.0,148921.0,1020.0
-2744,Newtown North Public School,NSW,Sydney,Primary,headcount,Newtown,2.82,A,,True,NSW Cadastre lots,,6567.8,258.0,240.0,27.4,1132.0,228495.0,952.0
-1042,Annandale North Public School,NSW,Sydney,Primary,headcount,Annandale,3.21,A,,True,NSW Cadastre lots,,5628.1,402.0,382.0,14.7,1148.0,276228.0,723.0
-1768,Double Bay Public School,NSW,Sydney,Primary,headcount,Double Bay,3.22,A,,True,NSW Cadastre lots,,7286.2,341.0,239.0,30.5,1135.0,245865.0,1029.0
-8288,Central Sydney Intensive English High School,NSW,Sydney,Secondary,headcount,Alexandria,3.22,A,,True,NSW Cadastre lots,Lot 1//DP733605 on Mitchell Road; the department’s point falls in the street beside it.,6418.5,135.0,164.0,39.1,1037.0,135161.0,824.0
-8556,Alexandria Park Community School,NSW,Sydney,Combined,headcount,Alexandria,3.23,A,,True,NSW Cadastre lots,Its lot includes the construction site to the north (the school’s new building).,26968.9,882.0,1244.0,21.7,1052.0,1605174.0,1290.0
-1240,Birchgrove Public School,NSW,Sydney,Primary,headcount,Balmain,3.5,A,,True,NSW Cadastre lots,,7364.9,371.0,246.0,29.9,1132.0,264496.0,1075.0
-7442,Woollahra Public School,NSW,Sydney,Primary,headcount,WOOLLAHRA,3.56,A,,True,NSW Cadastre lots,,7219.4,767.0,701.0,10.3,1193.0,437140.0,624.0
-7435,Rozelle Public School,NSW,Sydney,Primary,headcount,Rozelle,3.56,A,,True,NSW Cadastre lots,,15229.0,632.0,527.0,28.9,1162.0,283423.0,538.0
-4147,Erskineville Public School,NSW,Sydney,Primary,headcount,Erskineville,3.59,A,,True,NSW Cadastre lots,,9275.4,401.0,352.0,26.4,1155.0,228527.0,649.0
-5104,Australia Street Infants School,NSW,Sydney,Primary,headcount,Newtown,3.64,A,,True,NSW Cadastre lots,,3297.4,99.0,92.0,35.8,1143.0,73641.0,800.0
-1041,Annandale Public School,NSW,Sydney,Primary,headcount,Annandale,3.65,A,,True,NSW Cadastre lots,,11042.8,402.0,377.0,29.3,1145.0,286201.0,759.0
-8484,Sydney Secondary College Balmain Campus,NSW,Sydney,Secondary,headcount,Rozelle,3.71,A,,True,NSW Cadastre lots,,35733.1,803.0,882.0,40.5,1112.0,691787.0,784.0
-7431,Newtown Public School,NSW,Sydney,Primary,headcount,Newtown,3.87,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown High of Performing Arts. Drawn round its own building and grounds. The playing field to the south is left out of both schools.,8693.5,417.0,302.0,,1140.0,227539.0,753.0
-8530,Newtown High School of Performing Arts,NSW,Sydney,Secondary,headcount,Newtown,3.89,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown Public. Drawn round its own buildings. The playing field to the south is left out of both schools.,17273.0,1066.0,1136.0,,1127.0,524856.0,462.0
-2766,North Sydney Public School,NSW,Sydney,Primary,headcount,Waverton,4.27,A,,True,NSW Cadastre lots,,19159.7,887.0,723.0,26.5,1144.0,603537.0,835.0
-2812,Orange Grove Public School,NSW,Sydney,Primary,headcount,Leichhardt,4.38,A,,True,NSW Cadastre lots,,17643.2,496.0,509.0,34.7,1132.0,310783.0,611.0
-8507,Sydney Secondary College Leichhardt Campus,NSW,Sydney,Secondary,headcount,Leichhardt,4.4,B,,True,NSW Cadastre lots,"Lot 50//DP1271697 has two parts: the fenced campus is used; the northern part, a field across the street, is left out.",15351.1,921.0,818.0,18.8,1104.0,614789.0,752.0
-2283,Kensington Public School,NSW,Sydney,Primary,headcount,KENSINGTON,4.41,A,,True,NSW Cadastre lots,,7043.5,453.0,417.0,16.9,1120.0,280774.0,673.0
-7436,Stanmore Public School,NSW,Sydney,Primary,headcount,Stanmore,4.51,A,,True,NSW Cadastre lots,,16346.8,636.0,553.0,29.6,1138.0,353395.0,639.0
-8910,Cammeraygal High School,NSW,Sydney,Secondary,headcount,Crows Nest,4.57,D,school split across two sites,False,NSW Cadastre lots,"Lot 1//DP782580, the Years 7 to 9 campus at 192 Pacific Highway, Crows Nest (the department point falls on the strata building next door, SP87962). Its Years 10 to 12 campus at 149 West Street is not included, so its grounds per student would be understated: not compared.",6191.8,635.0,905.0,,1135.0,525740.0,581.0
-7423,Leichhardt Public School,NSW,Sydney,Primary,headcount,Leichhardt,4.6,A,,True,NSW Cadastre lots,,15451.2,736.0,576.0,26.8,1122.0,451230.0,783.0
-1483,Camdenville Public School,NSW,Sydney,Primary,headcount,Newtown,4.61,A,,True,NSW Cadastre lots,,15322.1,344.0,316.0,48.5,1132.0,233698.0,740.0
-2730,Neutral Bay Public School,NSW,Sydney,Primary,headcount,Neutral Bay,4.68,A,,True,NSW Cadastre lots,,8131.2,959.0,690.0,11.8,1169.0,370543.0,537.0
-8133,North Sydney Girls High School,NSW,Sydney,Secondary,headcount,Crows Nest,4.78,A,,True,NSW Cadastre lots,,15745.8,909.0,910.0,17.3,1203.0,532577.0,585.0
-5112,Taverners Hill Infants School,NSW,Sydney,Primary,headcount,Petersham,4.84,A,,True,NSW Cadastre lots,,2720.7,61.0,25.0,108.8,1129.0,32849.0,1314.0
-8132,North Sydney Boys High School,NSW,Sydney,Secondary,headcount,North Sydney,4.88,A,,True,NSW Cadastre lots,,24929.3,915.0,926.0,26.9,1195.0,406606.0,439.0
-3953,Waverley Public School,NSW,Sydney,Primary,headcount,Waverley,5.03,B,,True,NSW Cadastre lots,The grassed lot to the north and the treed strip to the west may also be used by the school; only lot 1//DP603457 is used.,7725.6,330.0,306.0,25.2,1150.0,238725.0,780.0
-1179,Bellevue Hill Public School,NSW,Sydney,Primary,headcount,Bellevue Hill,5.19,A,,True,NSW Cadastre lots,,6915.7,566.0,566.0,12.2,1156.0,589240.0,1041.0
-3032,St Peters Public School,NSW,Sydney,Primary,headcount,St Peters,5.19,A,,True,NSW Cadastre lots,,19395.7,124.0,171.0,113.4,1099.0,169972.0,994.0
-4656,Anzac Park Public School,NSW,Sydney,Primary,headcount,CAMMERAY,5.2,A,,True,NSW Cadastre lots,,9783.0,619.0,794.0,12.3,1147.0,592806.0,747.0
-1774,Drummoyne Public School,NSW,Sydney,Primary,headcount,Drummoyne,5.26,A,,True,NSW Cadastre lots,,9194.8,620.0,438.0,21.0,1137.0,413145.0,943.0
-8504,Fort Street High School,NSW,Sydney,Secondary,headcount,PETERSHAM,5.26,A,,True,NSW Cadastre lots,,39423.8,908.0,913.0,43.2,1176.0,453041.0,496.0
-4250,Randwick Public School,NSW,Sydney,Primary,headcount,RANDWICK,5.3,B,,True,NSW Cadastre lots,The courts and buildings in the middle of the block may also be the school’s; only the picked lots are used.,11799.8,958.0,878.0,13.4,1155.0,593446.0,676.0
-7418,Gardeners Road Public School,NSW,Sydney,Primary,headcount,ROSEBERY,5.33,A,,True,NSW Cadastre lots,,20999.5,358.0,450.0,46.7,1058.0,689819.0,1533.0
-3952,Marrickville Public School,NSW,Sydney,Primary,headcount,Marrickville,5.47,A,,True,NSW Cadastre lots,,19329.1,291.0,211.0,91.6,1090.0,250075.0,1185.0
-2270,Kegworth Public School,NSW,Sydney,Primary,headcount,Leichhardt,5.66,B,,True,NSW Cadastre lots,The corner lot to the south-west with a building and a court is left out; the school’s use of it is not clear on the imagery.,6674.7,343.0,274.0,24.4,1117.0,248181.0,906.0
-2076,Greenwich Public School,NSW,Sydney,Primary,headcount,Greenwich,5.67,A,,True,NSW Cadastre lots,,21170.1,487.0,428.0,49.5,1175.0,331382.0,774.0
-4543,Wilkins Public School,NSW,Sydney,Primary,headcount,Marrickville,5.69,A,,True,NSW Cadastre lots,,38603.4,607.0,512.0,75.4,1135.0,470609.0,919.0
-4502,Petersham Public School,NSW,Sydney,Primary,headcount,Petersham,5.73,A,,True,NSW Cadastre lots,,11709.0,267.0,247.0,47.4,1137.0,222031.0,899.0
-7407,Bondi Public School,NSW,Sydney,Primary,headcount,Bondi,5.83,A,,True,NSW Cadastre lots,"One lot, with the field and the building across the lane to the south.",11464.5,596.0,492.0,23.3,1139.0,303987.0,618.0
-8540,Marrickville High School,NSW,Sydney,Secondary,headcount,Marrickville,5.87,A,,True,NSW Cadastre lots,,30268.2,465.0,688.0,44.0,1052.0,766153.0,1114.0
-1485,Cammeray Public School,NSW,Sydney,Primary,headcount,Cammeray,5.89,A,,True,NSW Cadastre lots,,13421.9,888.0,643.0,20.9,1168.0,356296.0,554.0
-8326,Mosman High School,NSW,Sydney,Secondary,headcount,MOSMAN,5.94,A,,True,NSW Cadastre lots,,14352.5,1102.0,1022.0,14.0,1126.0,641001.0,627.0
-7430,Mosman Public School,NSW,Sydney,Primary,headcount,Mosman,5.98,A,,True,NSW Cadastre lots,,13170.0,668.0,490.0,26.9,1157.0,310600.0,634.0
-1372,Bronte Public School,NSW,Sydney,Primary,headcount,BRONTE,5.99,A,,True,NSW Cadastre lots,,5524.0,388.0,262.0,21.1,1176.0,174741.0,667.0
-2988,Rose Bay Public School,NSW,Sydney,Primary,headcount,ROSE BAY,5.99,B,,True,NSW Cadastre lots,A treed lot between the field and the north building is left out.,10445.3,587.0,391.0,26.7,1145.0,364277.0,932.0
-5132,Russell Lea Public School,NSW,Sydney,Primary,headcount,Russell Lea,6.01,A,,True,NSW Cadastre lots,,11667.9,258.0,412.0,28.3,1140.0,245054.0,595.0
-8263,J J Cahill Memorial High School,NSW,Sydney,Secondary,headcount,Mascot,6.04,A,,True,NSW Cadastre lots,,38184.1,327.0,287.0,133.0,987.0,668225.0,2328.0
-3873,Dobroyd Point Public School,NSW,Sydney,Primary,headcount,Haberfield,6.04,A,,True,NSW Cadastre lots,,10114.8,227.0,132.0,76.6,1149.0,105596.0,800.0
-8599,Bradfield College,NSW,Sydney,Secondary,headcount,St Leonards,6.09,D,outline takes in another campus,False,drawn over NSW Imagery,"Inside the TAFE NSW St Leonards campus (lot 101//DP1075748, 5.4 ha). Drawn round its building only.",1236.1,290.0,332.0,,1108.0,,
-2543,Middle Harbour Public School,NSW,Sydney,Primary,headcount,Mosman,6.12,A,,True,NSW Cadastre lots,,13180.3,609.0,449.0,29.4,1162.0,292607.0,652.0
-4516,Eastlakes Public School,NSW,Sydney,Primary,headcount,Eastlakes,6.14,A,,True,NSW Cadastre lots,,18522.3,197.0,166.0,111.6,1046.0,265972.0,1602.0
-4369,Lewisham Public School,NSW,Sydney,Primary,headcount,LEWISHAM,6.18,B,,True,NSW Cadastre lots,A lot to the north-east with part of the courts touches the rest only through a sliver lot and is left out; buildings to the west and north may also be the school’s.,4006.9,217.0,217.0,18.5,1121.0,256903.0,1184.0
-2499,Mascot Public School,NSW,Sydney,Primary,headcount,Mascot,6.28,A,,True,NSW Cadastre lots,,36689.6,367.0,403.0,91.0,1035.0,721833.0,1791.0
-1573,Clovelly Public School,NSW,Sydney,Primary,headcount,Waverley,6.28,B,,True,NSW Cadastre lots,"Lots north and south-west of the school (trees, a strip between buildings) may also be the school’s; only the picked lots are used.",7569.7,599.0,507.0,14.9,1161.0,230440.0,455.0
-2930,Rainbow Street Public School,NSW,Sydney,Primary,headcount,RANDWICK,6.4,A,,True,NSW Cadastre lots,,17944.6,390.0,478.0,37.5,1122.0,413628.0,865.0
-8555,Rose Bay Secondary College,NSW,Sydney,Secondary,headcount,Dover Heights,6.49,A,,True,NSW Cadastre lots,"One lot, with the field to the west.",23707.8,1305.0,1216.0,19.5,1107.0,816573.0,672.0
-7413,Daceyville Public School,NSW,Sydney,Primary,headcount,Daceyville,6.58,A,,True,NSW Cadastre lots,,27801.9,269.0,138.0,201.5,1029.0,268218.0,1944.0
-2189,Hunters Hill Public School,NSW,Sydney,Primary,headcount,Hunters Hill,6.6,A,,True,NSW Cadastre lots,,9952.5,369.0,265.0,37.6,1149.0,239899.0,905.0
-8833,Dulwich High School of Visual Arts and Design,NSW,Sydney,Secondary,headcount,Dulwich Hill,6.61,B,,True,NSW Cadastre lots,The field to the south-east is a separate lot and is left out.,15042.5,850.0,830.0,18.1,1092.0,656211.0,791.0
-8506,Tempe High School,NSW,Sydney,Secondary,headcount,Tempe,6.65,A,,True,NSW Cadastre lots,,19890.7,946.0,1015.0,19.6,1096.0,698938.0,689.0
-1616,Coogee Public School,NSW,Sydney,Primary,headcount,Coogee,6.66,A,,True,NSW Cadastre lots,,7853.5,615.0,409.0,19.2,1154.0,424710.0,1038.0
-2117,Haberfield Public School,NSW,Sydney,Primary,headcount,Haberfield,6.69,A,,True,NSW Cadastre lots,"One lot (70//DP1250857), with a grassed strip running south to the next street.",16571.9,670.0,561.0,29.5,1125.0,432793.0,771.0
-1292,Bondi Beach Public School,NSW,Sydney,Primary,headcount,Bondi Beach,6.74,A,,True,NSW Cadastre lots,,10882.7,618.0,380.0,28.6,1120.0,282755.0,744.0
-3948,Tempe Public School,NSW,Sydney,Primary,headcount,Tempe,6.75,A,,True,NSW Cadastre lots,,17793.4,322.0,343.0,51.9,1096.0,315016.0,918.0
-2761,Northbridge Public School,NSW,Sydney,Primary,headcount,Northbridge,6.79,A,,True,NSW Cadastre lots,,11743.7,519.0,408.0,28.8,1181.0,193507.0,474.0
-3129,Summer Hill Public School,NSW,Sydney,Primary,headcount,Summer Hill,6.96,A,,True,NSW Cadastre lots,"37 lots: the whole block, with the courts and the field across the lane.",14324.2,761.0,653.0,21.9,1167.0,494434.0,757.0
-8207,Hunters Hill High School,NSW,Sydney,Secondary,headcount,Hunters Hill,6.97,A,,True,NSW Cadastre lots,"One lot to the water, with the oval.",65207.0,701.0,797.0,81.8,1104.0,535638.0,672.0
+school_key,school_name,state,city,level,count_basis,suburb,km_from_centre,grade,flag,in_comparison,outline_from,outline_note,area_m2,students_2019,students_2024,m2_per_student_2024,opened,first_full_cohort_year,nsw_only_icsea,nsw_only_ram_2024,nsw_only_ram_per_student_2024
+3305,Ultimo Public School,NSW,Sydney,Primary,headcount,Ultimo,1.09,A,,True,NSW Cadastre lots,,5294.0,314.0,478.0,11.1,,,1088.0,550038.0,1151.0
+3935,Crown Street Public School,NSW,Sydney,Primary,headcount,Surry Hills,1.31,A,,True,NSW Cadastre lots,,6210.8,292.0,318.0,19.5,,,1114.0,306372.0,963.0
+8147,Conservatorium High School,NSW,Sydney,Secondary,headcount,Sydney,1.31,D,outline takes in another campus,False,NSW Cadastre lots,"Lot 1//DP832310, the Greenway building, which it shares with the Sydney Conservatorium of Music.",4007.7,151.0,151.0,,,,1194.0,169706.0,1124.0
+4551,Plunkett Street Public School,NSW,Sydney,Primary,headcount,Woolloomooloo,1.33,D,shared outline,False,NSW Cadastre lots,Its lot (2//DP866026) is shared with the distance education school next door.,7845.9,60.0,75.0,,,,968.0,191766.0,2557.0
+1937,Fort Street Public School,NSW,Sydney,Primary,headcount,Millers Point,1.42,A,,True,NSW Cadastre lots,Its lot covers the whole Observatory Hill site inside the ring road.,4497.9,215.0,292.0,15.4,,,1094.0,509194.0,1744.0
+8539,Sydney Secondary College Blackwattle Bay Campus,NSW,Sydney,Secondary,headcount,Glebe,1.65,A,,True,NSW Cadastre lots,,29873.3,777.0,805.0,37.1,,,1094.0,722365.0,897.0
+7414,Darlinghurst Public School,NSW,Sydney,Primary,headcount,Potts Point,1.71,A,,True,NSW Cadastre lots,,5838.3,322.0,243.0,24.0,,,1156.0,305601.0,1258.0
+8913,Inner Sydney High School,NSW,Sydney,Secondary,headcount,Surry Hills,1.8,A,"staged opening: Years 7 to 11 in 2024, all year groups from 2025",False,NSW Cadastre lots,,5628.1,,999.0,,2020.0,2025.0,1104.0,671549.0,672.0
+7419,Glebe Public School,NSW,Sydney,Primary,headcount,Glebe,1.82,A,,True,NSW Cadastre lots,Three lots including the grassed block on the north side.,8012.9,309.0,238.0,33.7,,,982.0,476528.0,2002.0
+7408,Bourke Street Public School,NSW,Sydney,Primary,headcount,Surry Hills,2.12,A,,True,NSW Cadastre lots,,5762.3,436.0,391.0,14.7,,,1135.0,292742.0,749.0
+2749,Nicholson Street Public School,NSW,Sydney,Primary,headcount,Balmain East,2.28,B,,True,NSW Cadastre lots,A 267 m² lot that does not touch the rest (11//DP879298) is left out.,3876.1,168.0,93.0,41.7,,,1151.0,66688.0,717.0
+2009,Glenmore Road Public School,NSW,Sydney,Primary,headcount,Paddington,2.41,A,,True,NSW Cadastre lots,,7996.0,364.0,301.0,26.6,,,1176.0,195043.0,648.0
+8137,Sydney Boys High School,NSW,Sydney,Secondary,headcount,MOORE PARK,2.42,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Girls High. Drawn: the lot split along a line between the two schools’ buildings.,37644.3,1208.0,1202.0,31.3,,,1189.0,603209.0,502.0
+1932,Forest Lodge Public School,NSW,Sydney,Primary,headcount,Forest Lodge,2.47,A,,True,NSW Cadastre lots,,6924.8,340.0,309.0,22.4,,,1161.0,345183.0,1117.0
+7404,Balmain Public School,NSW,Sydney,Primary,headcount,BALMAIN,2.61,A,,True,NSW Cadastre lots,,3448.4,379.0,335.0,10.3,,,1172.0,310504.0,927.0
+1735,Darlington Public School,NSW,Sydney,Primary,headcount,Chippendale,2.66,A,,True,NSW Cadastre lots,Its lot includes the marked playing field.,7176.8,206.0,146.0,49.2,,,1030.0,381841.0,2615.0
+8138,Sydney Girls High School,NSW,Sydney,Secondary,headcount,Surry Hills,2.68,C,,True,drawn over NSW Imagery,Shares lot 1744//DP820527 with Sydney Boys High. Drawn: the lot split along a line between the two schools’ buildings.,19723.1,924.0,938.0,21.0,,,1193.0,358039.0,382.0
+7432,Paddington Public School,NSW,Sydney,Primary,headcount,Paddington,2.74,A,,True,NSW Cadastre lots,,4402.6,291.0,146.0,30.2,,,1155.0,148921.0,1020.0
+2744,Newtown North Public School,NSW,Sydney,Primary,headcount,Newtown,2.82,A,,True,NSW Cadastre lots,,6567.8,258.0,240.0,27.4,,,1132.0,228495.0,952.0
+1042,Annandale North Public School,NSW,Sydney,Primary,headcount,Annandale,3.21,A,,True,NSW Cadastre lots,,5628.1,402.0,382.0,14.7,,,1148.0,276228.0,723.0
+1768,Double Bay Public School,NSW,Sydney,Primary,headcount,Double Bay,3.22,A,,True,NSW Cadastre lots,,7286.2,341.0,239.0,30.5,,,1135.0,245865.0,1029.0
+8288,Central Sydney Intensive English High School,NSW,Sydney,Secondary,headcount,Alexandria,3.22,A,,True,NSW Cadastre lots,Lot 1//DP733605 on Mitchell Road; the department’s point falls in the street beside it.,6418.5,135.0,164.0,39.1,,,1037.0,135161.0,824.0
+8556,Alexandria Park Community School,NSW,Sydney,Combined,headcount,Alexandria,3.23,A,,True,NSW Cadastre lots,Its lot includes the construction site to the north (the school’s new building).,26968.9,882.0,1244.0,21.7,,,1052.0,1605174.0,1290.0
+1240,Birchgrove Public School,NSW,Sydney,Primary,headcount,Balmain,3.5,A,,True,NSW Cadastre lots,,7364.9,371.0,246.0,29.9,,,1132.0,264496.0,1075.0
+7442,Woollahra Public School,NSW,Sydney,Primary,headcount,WOOLLAHRA,3.56,A,,True,NSW Cadastre lots,,7219.4,767.0,701.0,10.3,,,1193.0,437140.0,624.0
+7435,Rozelle Public School,NSW,Sydney,Primary,headcount,Rozelle,3.56,A,,True,NSW Cadastre lots,,15229.0,632.0,527.0,28.9,,,1162.0,283423.0,538.0
+4147,Erskineville Public School,NSW,Sydney,Primary,headcount,Erskineville,3.59,A,,True,NSW Cadastre lots,,9275.4,401.0,352.0,26.4,,,1155.0,228527.0,649.0
+5104,Australia Street Infants School,NSW,Sydney,Primary,headcount,Newtown,3.64,A,,True,NSW Cadastre lots,,3297.4,99.0,92.0,35.8,,,1143.0,73641.0,800.0
+1041,Annandale Public School,NSW,Sydney,Primary,headcount,Annandale,3.65,A,,True,NSW Cadastre lots,,11042.8,402.0,377.0,29.3,,,1145.0,286201.0,759.0
+8484,Sydney Secondary College Balmain Campus,NSW,Sydney,Secondary,headcount,Rozelle,3.71,A,,True,NSW Cadastre lots,,35733.1,803.0,882.0,40.5,,,1112.0,691787.0,784.0
+7431,Newtown Public School,NSW,Sydney,Primary,headcount,Newtown,3.87,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown High of Performing Arts. Drawn round its own building and grounds. The playing field to the south is left out of both schools.,8693.5,417.0,302.0,,,,1140.0,227539.0,753.0
+8530,Newtown High School of Performing Arts,NSW,Sydney,Secondary,headcount,Newtown,3.89,D,shared outline,False,drawn over NSW Imagery,Shares lot 1//DP1255138 with Newtown Public. Drawn round its own buildings. The playing field to the south is left out of both schools.,17273.0,1066.0,1136.0,,,,1127.0,524856.0,462.0
+2766,North Sydney Public School,NSW,Sydney,Primary,headcount,Waverton,4.27,A,,True,NSW Cadastre lots,,19159.7,887.0,723.0,26.5,,,1144.0,603537.0,835.0
+2812,Orange Grove Public School,NSW,Sydney,Primary,headcount,Leichhardt,4.38,A,,True,NSW Cadastre lots,,17643.2,496.0,509.0,34.7,,,1132.0,310783.0,611.0
+8507,Sydney Secondary College Leichhardt Campus,NSW,Sydney,Secondary,headcount,Leichhardt,4.4,B,,True,NSW Cadastre lots,"Lot 50//DP1271697 has two parts: the fenced campus is used; the northern part, a field across the street, is left out.",15351.1,921.0,818.0,18.8,,,1104.0,614789.0,752.0
+2283,Kensington Public School,NSW,Sydney,Primary,headcount,KENSINGTON,4.41,A,,True,NSW Cadastre lots,,7043.5,453.0,417.0,16.9,,,1120.0,280774.0,673.0
+7436,Stanmore Public School,NSW,Sydney,Primary,headcount,Stanmore,4.51,A,,True,NSW Cadastre lots,,16346.8,636.0,553.0,29.6,,,1138.0,353395.0,639.0
+8910,Cammeraygal High School,NSW,Sydney,Secondary,headcount,Crows Nest,4.57,D,school split across two sites,False,NSW Cadastre lots,"Lot 1//DP782580, the Years 7 to 9 campus at 192 Pacific Highway, Crows Nest (the department point falls on the strata building next door, SP87962). Its Years 10 to 12 campus at 149 West Street is not included, so its grounds per student would be understated: not compared.",6191.8,635.0,905.0,,,,1135.0,525740.0,581.0
+7423,Leichhardt Public School,NSW,Sydney,Primary,headcount,Leichhardt,4.6,A,,True,NSW Cadastre lots,,15451.2,736.0,576.0,26.8,,,1122.0,451230.0,783.0
+1483,Camdenville Public School,NSW,Sydney,Primary,headcount,Newtown,4.61,A,,True,NSW Cadastre lots,,15322.1,344.0,316.0,48.5,,,1132.0,233698.0,740.0
+2730,Neutral Bay Public School,NSW,Sydney,Primary,headcount,Neutral Bay,4.68,A,,True,NSW Cadastre lots,,8131.2,959.0,690.0,11.8,,,1169.0,370543.0,537.0
+8133,North Sydney Girls High School,NSW,Sydney,Secondary,headcount,Crows Nest,4.78,A,,True,NSW Cadastre lots,,15745.8,909.0,910.0,17.3,,,1203.0,532577.0,585.0
+5112,Taverners Hill Infants School,NSW,Sydney,Primary,headcount,Petersham,4.84,A,,True,NSW Cadastre lots,,2720.7,61.0,25.0,108.8,,,1129.0,32849.0,1314.0
+8132,North Sydney Boys High School,NSW,Sydney,Secondary,headcount,North Sydney,4.88,A,,True,NSW Cadastre lots,,24929.3,915.0,926.0,26.9,,,1195.0,406606.0,439.0
+3953,Waverley Public School,NSW,Sydney,Primary,headcount,Waverley,5.03,B,,True,NSW Cadastre lots,The grassed lot to the north and the treed strip to the west may also be used by the school; only lot 1//DP603457 is used.,7725.6,330.0,306.0,25.2,,,1150.0,238725.0,780.0
+1179,Bellevue Hill Public School,NSW,Sydney,Primary,headcount,Bellevue Hill,5.19,A,,True,NSW Cadastre lots,,6915.7,566.0,566.0,12.2,,,1156.0,589240.0,1041.0
+3032,St Peters Public School,NSW,Sydney,Primary,headcount,St Peters,5.19,A,,True,NSW Cadastre lots,,19395.7,124.0,171.0,113.4,,,1099.0,169972.0,994.0
+4656,Anzac Park Public School,NSW,Sydney,Primary,headcount,CAMMERAY,5.2,A,,True,NSW Cadastre lots,,9783.0,619.0,794.0,12.3,2016.0,,1147.0,592806.0,747.0
+1774,Drummoyne Public School,NSW,Sydney,Primary,headcount,Drummoyne,5.26,A,,True,NSW Cadastre lots,,9194.8,620.0,438.0,21.0,,,1137.0,413145.0,943.0
+8504,Fort Street High School,NSW,Sydney,Secondary,headcount,PETERSHAM,5.26,A,,True,NSW Cadastre lots,,39423.8,908.0,913.0,43.2,,,1176.0,453041.0,496.0
+4250,Randwick Public School,NSW,Sydney,Primary,headcount,RANDWICK,5.3,B,,True,NSW Cadastre lots,The courts and buildings in the middle of the block may also be the school’s; only the picked lots are used.,11799.8,958.0,878.0,13.4,,,1155.0,593446.0,676.0
+7418,Gardeners Road Public School,NSW,Sydney,Primary,headcount,ROSEBERY,5.33,A,,True,NSW Cadastre lots,,20999.5,358.0,450.0,46.7,,,1058.0,689819.0,1533.0
+3952,Marrickville Public School,NSW,Sydney,Primary,headcount,Marrickville,5.47,A,,True,NSW Cadastre lots,,19329.1,291.0,211.0,91.6,,,1090.0,250075.0,1185.0
+2270,Kegworth Public School,NSW,Sydney,Primary,headcount,Leichhardt,5.66,B,,True,NSW Cadastre lots,The corner lot to the south-west with a building and a court is left out; the school’s use of it is not clear on the imagery.,6674.7,343.0,274.0,24.4,,,1117.0,248181.0,906.0
+2076,Greenwich Public School,NSW,Sydney,Primary,headcount,Greenwich,5.67,A,,True,NSW Cadastre lots,,21170.1,487.0,428.0,49.5,,,1175.0,331382.0,774.0
+4543,Wilkins Public School,NSW,Sydney,Primary,headcount,Marrickville,5.69,A,,True,NSW Cadastre lots,,38603.4,607.0,512.0,75.4,,,1135.0,470609.0,919.0
+4502,Petersham Public School,NSW,Sydney,Primary,headcount,Petersham,5.73,A,,True,NSW Cadastre lots,,11709.0,267.0,247.0,47.4,,,1137.0,222031.0,899.0
+7407,Bondi Public School,NSW,Sydney,Primary,headcount,Bondi,5.83,A,,True,NSW Cadastre lots,"One lot, with the field and the building across the lane to the south.",11464.5,596.0,492.0,23.3,,,1139.0,303987.0,618.0
+8540,Marrickville High School,NSW,Sydney,Secondary,headcount,Marrickville,5.87,A,,True,NSW Cadastre lots,,30268.2,465.0,688.0,44.0,,,1052.0,766153.0,1114.0
+1485,Cammeray Public School,NSW,Sydney,Primary,headcount,Cammeray,5.89,A,,True,NSW Cadastre lots,,13421.9,888.0,643.0,20.9,,,1168.0,356296.0,554.0
+8326,Mosman High School,NSW,Sydney,Secondary,headcount,MOSMAN,5.94,A,,True,NSW Cadastre lots,,14352.5,1102.0,1022.0,14.0,,,1126.0,641001.0,627.0
+7430,Mosman Public School,NSW,Sydney,Primary,headcount,Mosman,5.98,A,,True,NSW Cadastre lots,,13170.0,668.0,490.0,26.9,,,1157.0,310600.0,634.0
+1372,Bronte Public School,NSW,Sydney,Primary,headcount,BRONTE,5.99,A,,True,NSW Cadastre lots,,5524.0,388.0,262.0,21.1,,,1176.0,174741.0,667.0
+2988,Rose Bay Public School,NSW,Sydney,Primary,headcount,ROSE BAY,5.99,B,,True,NSW Cadastre lots,A treed lot between the field and the north building is left out.,10445.3,587.0,391.0,26.7,,,1145.0,364277.0,932.0
+5132,Russell Lea Public School,NSW,Sydney,Primary,headcount,Russell Lea,6.01,A,,True,NSW Cadastre lots,,11667.9,258.0,412.0,28.3,,,1140.0,245054.0,595.0
+8263,J J Cahill Memorial High School,NSW,Sydney,Secondary,headcount,Mascot,6.04,A,,True,NSW Cadastre lots,,38184.1,327.0,287.0,133.0,,,987.0,668225.0,2328.0
+3873,Dobroyd Point Public School,NSW,Sydney,Primary,headcount,Haberfield,6.04,A,,True,NSW Cadastre lots,,10114.8,227.0,132.0,76.6,,,1149.0,105596.0,800.0
+8599,Bradfield College,NSW,Sydney,Secondary,headcount,St Leonards,6.09,D,outline takes in another campus,False,drawn over NSW Imagery,"Inside the TAFE NSW St Leonards campus (lot 101//DP1075748, 5.4 ha). Drawn round its building only.",1236.1,290.0,332.0,,,,1108.0,,
+2543,Middle Harbour Public School,NSW,Sydney,Primary,headcount,Mosman,6.12,A,,True,NSW Cadastre lots,,13180.3,609.0,449.0,29.4,,,1162.0,292607.0,652.0
+4516,Eastlakes Public School,NSW,Sydney,Primary,headcount,Eastlakes,6.14,A,,True,NSW Cadastre lots,,18522.3,197.0,166.0,111.6,,,1046.0,265972.0,1602.0
+4369,Lewisham Public School,NSW,Sydney,Primary,headcount,LEWISHAM,6.18,B,,True,NSW Cadastre lots,A lot to the north-east with part of the courts touches the rest only through a sliver lot and is left out; buildings to the west and north may also be the school’s.,4006.9,217.0,217.0,18.5,,,1121.0,256903.0,1184.0
+2499,Mascot Public School,NSW,Sydney,Primary,headcount,Mascot,6.28,A,,True,NSW Cadastre lots,,36689.6,367.0,403.0,91.0,,,1035.0,721833.0,1791.0
+1573,Clovelly Public School,NSW,Sydney,Primary,headcount,Waverley,6.28,B,,True,NSW Cadastre lots,"Lots north and south-west of the school (trees, a strip between buildings) may also be the school’s; only the picked lots are used.",7569.7,599.0,507.0,14.9,,,1161.0,230440.0,455.0
+2930,Rainbow Street Public School,NSW,Sydney,Primary,headcount,RANDWICK,6.4,A,,True,NSW Cadastre lots,,17944.6,390.0,478.0,37.5,,,1122.0,413628.0,865.0
+8555,Rose Bay Secondary College,NSW,Sydney,Secondary,headcount,Dover Heights,6.49,A,,True,NSW Cadastre lots,"One lot, with the field to the west.",23707.8,1305.0,1216.0,19.5,,,1107.0,816573.0,672.0
+7413,Daceyville Public School,NSW,Sydney,Primary,headcount,Daceyville,6.58,A,,True,NSW Cadastre lots,,27801.9,269.0,138.0,201.5,,,1029.0,268218.0,1944.0
+2189,Hunters Hill Public School,NSW,Sydney,Primary,headcount,Hunters Hill,6.6,A,,True,NSW Cadastre lots,,9952.5,369.0,265.0,37.6,,,1149.0,239899.0,905.0
+8833,Dulwich High School of Visual Arts and Design,NSW,Sydney,Secondary,headcount,Dulwich Hill,6.61,B,,True,NSW Cadastre lots,The field to the south-east is a separate lot and is left out.,15042.5,850.0,830.0,18.1,,,1092.0,656211.0,791.0
+8506,Tempe High School,NSW,Sydney,Secondary,headcount,Tempe,6.65,A,,True,NSW Cadastre lots,,19890.7,946.0,1015.0,19.6,,,1096.0,698938.0,689.0
+1616,Coogee Public School,NSW,Sydney,Primary,headcount,Coogee,6.66,A,,True,NSW Cadastre lots,,7853.5,615.0,409.0,19.2,,,1154.0,424710.0,1038.0
+2117,Haberfield Public School,NSW,Sydney,Primary,headcount,Haberfield,6.69,A,,True,NSW Cadastre lots,"One lot (70//DP1250857), with a grassed strip running south to the next street.",16571.9,670.0,561.0,29.5,,,1125.0,432793.0,771.0
+1292,Bondi Beach Public School,NSW,Sydney,Primary,headcount,Bondi Beach,6.74,A,,True,NSW Cadastre lots,,10882.7,618.0,380.0,28.6,,,1120.0,282755.0,744.0
+3948,Tempe Public School,NSW,Sydney,Primary,headcount,Tempe,6.75,A,,True,NSW Cadastre lots,,17793.4,322.0,343.0,51.9,,,1096.0,315016.0,918.0
+2761,Northbridge Public School,NSW,Sydney,Primary,headcount,Northbridge,6.79,A,,True,NSW Cadastre lots,,11743.7,519.0,408.0,28.8,,,1181.0,193507.0,474.0
+3129,Summer Hill Public School,NSW,Sydney,Primary,headcount,Summer Hill,6.96,A,,True,NSW Cadastre lots,"37 lots: the whole block, with the courts and the field across the lane.",14324.2,761.0,653.0,21.9,,,1167.0,494434.0,757.0
+8207,Hunters Hill High School,NSW,Sydney,Secondary,headcount,Hunters Hill,6.97,A,,True,NSW Cadastre lots,"One lot to the water, with the oval.",65207.0,701.0,797.0,81.8,,,1104.0,535638.0,672.0

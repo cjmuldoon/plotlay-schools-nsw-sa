@@ -6,7 +6,7 @@ school_key,school_name,grade,flag,in_comparison,outline_from,outline_note,area_m
 1937,Fort Street Public School,A,,True,NSW Cadastre lots,Its lot covers the whole Observatory Hill site inside the ring road.,4497.9
 8539,Sydney Secondary College Blackwattle Bay Campus,A,,True,NSW Cadastre lots,,29873.3
 7414,Darlinghurst Public School,A,,True,NSW Cadastre lots,,5838.3
-8913,Inner Sydney High School,A,,True,NSW Cadastre lots,,5628.1
+8913,Inner Sydney High School,A,"staged opening: Years 7 to 11 in 2024, all year groups from 2025",False,NSW Cadastre lots,,5628.1
 7419,Glebe Public School,A,,True,NSW Cadastre lots,Three lots including the grassed block on the north side.,8012.9
 7408,Bourke Street Public School,A,,True,NSW Cadastre lots,,5762.3
 2749,Nicholson Street Public School,B,,True,NSW Cadastre lots,A 267 m² lot that does not touch the rest (11//DP879298) is left out.,3876.1

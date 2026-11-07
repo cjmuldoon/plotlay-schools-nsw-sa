@@ -21,10 +21,11 @@ This package shows differences side by side. It does not say which state is bett
 | Students at school on 90% or more of days, Years 1 to 10, 2025 | 60.3% |
 | Apparent retention, Year 7/8 to Year 12, 2025 | 67.4% |
 | NAPLAN Year 9 numeracy mean, all sectors, 2026 | 582.4 |
-| Inner Sydney (7 km), median grounds per student, 2024 | primary 27.8 m² (62 schools), secondary 26.9 m² (17) |
-| Tightest inner Sydney school | Inner Sydney High, 999 students on 5,628 m²: 5.6 m² each |
+| Inner Sydney (7 km), median grounds per student, 2024 | primary 27.8 m² (62 schools), secondary 29.1 m² (16) |
+| Tightest compared inner Sydney school, 2024 | Balmain Public, 335 students on 3,448 m²: 10.3 m² each |
+| Inner Sydney High (a staged opening: Year 7 in 2020, Years 7 to 12 from 2025) | left out in 2024; in 2025, its first full year, 1,161 students on 5,628 m²: 4.8 m² each |
 
-NSW only, no SA equivalent published: across the 80 compared inner Sydney schools, grounds per student and ICSEA have a Spearman correlation of -0.33, and the median RAM funding (four equity and three base loadings, a part of each school's funding only) is $783 per student. Charts: [visuals/nsw/](visuals/nsw/).
+NSW only, no SA equivalent published: across the 79 compared inner Sydney schools, grounds per student and ICSEA have a Spearman correlation of -0.36, and the median RAM funding (four equity and three base loadings, a part of each school's funding only) is $783 per student. Charts: [visuals/nsw/](visuals/nsw/).
 
 ## 2. SA view (the same analysis)
 
@@ -39,7 +40,7 @@ NSW only, no SA equivalent published: across the 80 compared inner Sydney school
 | NAPLAN Year 9 numeracy mean, all sectors, 2026 | 557.2 |
 | Inner Adelaide (7 km), median grounds per student, 2024 | primary 42.1 m² (39 schools), secondary 34.2 m² (11) |
 | With the six recreation parcels next to schools that may be their ovals | primary 45.8 m², secondary 43.8 m² (upper bound) |
-| Tightest inner Adelaide school | Adelaide Botanic High, 1,197 FTE students on 7,243 m²: 6.1 m² each |
+| Tightest inner Adelaide school | Adelaide Botanic High, 1,197 FTE students on 7,243 m²: 6.1 m² each (opened 2019 with Years 8 and 9; every year group since 2022) |
 
 Charts: [visuals/sa/](visuals/sa/).
 
@@ -55,7 +56,7 @@ Charts: [visuals/sa/](visuals/sa/).
 | Apparent retention to Year 12, 2025 | 67.4% | 84.3% | +16.9 points |
 | NAPLAN Year 9 numeracy mean, 2026 | 582.4 | 557.2 | -25.2 |
 | Inner city median grounds per student, primary | 27.8 m² | 42.1 m² | 1.51 times |
-| Inner city median grounds per student, secondary | 26.9 m² | 34.2 m² (43.8 with adjoining ovals) | 1.27 times (1.63) |
+| Inner city median grounds per student, secondary | 29.1 m² | 34.2 m² (43.8 with adjoining ovals) | 1.18 times (1.51) |
 
 - The two systems spent about the same per student in 2014-15; NSW's real spend has grown faster since, most of the gap opening after 2021-22.
 - NSW puts a larger share into teachers; SA a larger share into other staff, operating costs and out-of-school services. States classify some staff differently.
@@ -76,7 +77,8 @@ One map project with two data layers, made the same way and keyed by school code
 ## One set of rules for both cities
 
 - Mainstream government schools within 7 km of Sydney Town Hall or Victoria Square with students in 2024: 86 in Sydney, 54 in Adelaide.
-- Each outline graded A (the school's own parcels), B (an open question, named in the checklist), C (a parcel split along an edge drawn on open 0.5 m or sharper imagery) or D (not an outline of the school's own grounds: shared with another school or a non-school campus, or a school split across two sites). D is left out of every median: 6 in Sydney, 3 in Adelaide. See `data/nsw/outline_checklist.csv` and `data/sa/outline_checklist.csv`.
+- Each outline graded A (the school's own parcels), B (an open question, named in the checklist), C (a parcel split along an edge drawn on open 0.5 m or sharper imagery) or D (not an outline of the school's own grounds: shared with another school or a non-school campus, or a school split across two sites). D is left out of every median: 6 in Sydney, 3 in Adelaide.
+- **Staged openings.** A new school opens with one or two year groups and adds one a year, so its growth is planned, not demand. A school without all its year groups in 2024 is shown but left out of the medians: Inner Sydney High (opened 2020 with Year 7, Years 7 to 12 from 2025; School Infrastructure NSW). Adelaide Botanic High opened in 2019 with Years 8 and 9 and has had Years 7 to 12 since 2022 (its 2024 annual report), so it is compared. See `data/nsw/outline_checklist.csv` and `data/sa/outline_checklist.csv`.
 - A separate lot or recreation parcel next to a school (an oval, a field across the street) is not counted in either city. For Adelaide the upper bound with the six recreation parcels that may be school ovals is reported too.
 - Areas in GDA2020 Australian Albers (EPSG:7845).
 
