@@ -12,8 +12,8 @@ table Enrolments
 
 	column year
 		dataType: int64
-		formatString: 0
 		isHidden
+		formatString: 0
 		lineageTag: 1551c856-552c-9b40-a2f3-7e545285f5d6
 		summarizeBy: none
 		sourceColumn: year
@@ -60,3 +60,4 @@ table Enrolments
 				    Keyed
 
 	annotation PBI_ResultType = Table
+

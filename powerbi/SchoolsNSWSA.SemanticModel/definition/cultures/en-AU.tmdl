@@ -1,1 +1,546 @@
 cultureInfo en-AU
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "outcomes.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Outcomes",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "outcomes.outcome_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Outcomes",
+			          "ConceptualProperty": "Outcome %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Per cent": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "years.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Years",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Enrolment year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.school_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "school_key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "School code": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.m2_band_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "m2_band_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m² per student": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.school_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "school_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "School": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.level": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "level"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Level": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.students": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Students"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Students": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.area_m2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "area_m2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Land (m²)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.m2_per_student": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "m2 per student"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m² per student": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.grade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "grade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Outline grade": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.nsw_only_icsea": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "nsw_only_icsea"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ICSEA": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.nsw_only_ram_per_student_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "nsw_only_ram_per_student_2024"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RAM per student, 2024": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.schools_under_15_m2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Schools under 15 m2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Under 15 m²": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.median_m2_per_student_secondary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Median m2 per student secondary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median m², secondary": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.schools_compared": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Schools compared"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Schools compared": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.median_m2_per_student_primary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Median m2 per student primary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median m², primary": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.median_m2_per_student": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Median m2 per student"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median m² per student": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.pooled_m2_per_student": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Pooled m2 per student"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Pooled m² per student": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "schools.students_compared": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Schools",
+			          "ConceptualProperty": "Students compared"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Students": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "spend.financial_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spend",
+			          "ConceptualProperty": "financial_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Financial year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "spend.spend_per_student": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Spend",
+			          "ConceptualProperty": "Spend per student"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spend per student ($)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "states.state": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "States",
+			          "ConceptualProperty": "state"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "State": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "naplan.year_level": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NAPLAN",
+			          "ConceptualProperty": "year_level"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Year level": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "naplan.mean_scale_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "NAPLAN",
+			          "ConceptualProperty": "Mean scale score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mean scale score": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

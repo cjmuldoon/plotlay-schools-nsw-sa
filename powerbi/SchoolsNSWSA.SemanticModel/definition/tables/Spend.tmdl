@@ -62,3 +62,4 @@ table Spend
 				    Out
 
 	annotation PBI_ResultType = Table
+

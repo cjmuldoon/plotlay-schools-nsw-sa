@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "540f6af6acaf6b350c3d",
   "position": {
     "x": 960,
@@ -28,26 +28,8 @@
               },
               "queryRef": "Schools.level",
               "nativeQueryRef": "level",
+              "active": true,
               "displayName": "Level"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Schools"
-                    }
-                  },
-                  "Property": "Median m2 per student"
-                }
-              },
-              "queryRef": "Schools.Median m2 per student",
-              "nativeQueryRef": "Median m2 per student",
-              "displayName": "Median m² per student"
             }
           ]
         },
@@ -69,6 +51,25 @@
               "displayName": "State"
             }
           ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Schools"
+                    }
+                  },
+                  "Property": "Median m2 per student"
+                }
+              },
+              "queryRef": "Schools.Median m2 per student",
+              "nativeQueryRef": "Median m2 per student",
+              "displayName": "Median m² per student"
+            }
+          ]
         }
       },
       "sortDefinition": {
@@ -86,39 +87,8 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": false
+        ]
       }
-    },
-    "drillFilterOtherVisuals": true,
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Median m² per student by level'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "objects": {
       "categoryAxis": [
@@ -244,7 +214,37 @@
           }
         }
       ]
-    }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Median m² per student by level'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [

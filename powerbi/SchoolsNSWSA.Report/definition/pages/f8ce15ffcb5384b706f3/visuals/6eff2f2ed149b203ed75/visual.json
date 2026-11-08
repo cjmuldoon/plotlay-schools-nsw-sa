@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "6eff2f2ed149b203ed75",
   "position": {
     "x": 40,
@@ -28,26 +28,8 @@
               },
               "queryRef": "Spend.financial_year",
               "nativeQueryRef": "financial_year",
+              "active": true,
               "displayName": "Financial year"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Spend"
-                    }
-                  },
-                  "Property": "Spend per student"
-                }
-              },
-              "queryRef": "Spend.Spend per student",
-              "nativeQueryRef": "Spend per student",
-              "displayName": "Spend per student ($)"
             }
           ]
         },
@@ -69,6 +51,25 @@
               "displayName": "State"
             }
           ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Spend"
+                    }
+                  },
+                  "Property": "Spend per student"
+                }
+              },
+              "queryRef": "Spend.Spend per student",
+              "nativeQueryRef": "Spend per student",
+              "displayName": "Spend per student ($)"
+            }
+          ]
         }
       },
       "sortDefinition": {
@@ -86,39 +87,8 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": false
+        ]
       }
-    },
-    "drillFilterOtherVisuals": true,
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Recurrent spend per student, real 2023-24 dollars'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "objects": {
       "categoryAxis": [
@@ -252,7 +222,37 @@
           }
         }
       ]
-    }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Recurrent spend per student, real 2023-24 dollars'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [

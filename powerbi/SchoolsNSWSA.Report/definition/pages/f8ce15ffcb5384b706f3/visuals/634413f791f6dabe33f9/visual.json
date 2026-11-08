@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "634413f791f6dabe33f9",
   "position": {
     "x": 960,
@@ -28,26 +28,8 @@
               },
               "queryRef": "NAPLAN.year_level",
               "nativeQueryRef": "year_level",
+              "active": true,
               "displayName": "Year level"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "NAPLAN"
-                    }
-                  },
-                  "Property": "Mean scale score"
-                }
-              },
-              "queryRef": "NAPLAN.Mean scale score",
-              "nativeQueryRef": "Mean scale score",
-              "displayName": "Mean scale score"
             }
           ]
         },
@@ -69,6 +51,25 @@
               "displayName": "State"
             }
           ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "NAPLAN"
+                    }
+                  },
+                  "Property": "Mean scale score"
+                }
+              },
+              "queryRef": "NAPLAN.Mean scale score",
+              "nativeQueryRef": "Mean scale score",
+              "displayName": "Mean scale score"
+            }
+          ]
         }
       },
       "sortDefinition": {
@@ -86,39 +87,8 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": false
+        ]
       }
-    },
-    "drillFilterOtherVisuals": true,
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'NAPLAN numeracy 2026, mean scale score (all students in the state)'"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "objects": {
       "categoryAxis": [
@@ -244,7 +214,37 @@
           }
         }
       ]
-    }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'NAPLAN numeracy 2026, mean scale score (all students in the state)'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [

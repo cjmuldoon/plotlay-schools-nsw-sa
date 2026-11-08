@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SchoolsNSWSA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4a9f2ec4-7760-4749-8614-514aa793a2be"
+  }
+}
