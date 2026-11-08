@@ -5,7 +5,7 @@
     "x": 39.288256227758005,
     "y": 13.665480427046262,
     "z": 0,
-    "height": 87.117437722419922,
+    "height": 87.11743772241992,
     "width": 1202.5622775800712,
     "tabOrder": 0
   },
@@ -23,7 +23,8 @@
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "22pt",
-                      "color": "#163c6e"
+                      "color": "#163c6e",
+                      "fontFamily": "Segoe UI Semibold"
                     }
                   }
                 ]
@@ -34,7 +35,8 @@
                     "value": "Inner Sydney and inner Adelaide government schools. NSW counts students by headcount, SA by full-time equivalent (FTE).",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]

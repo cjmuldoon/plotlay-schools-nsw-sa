@@ -1,6 +1,11 @@
 table Schools
 	lineageTag: b5fe5259-31dd-3b62-06e0-c1bbabecf0d5
 
+	/// For the maps: each compared school's m² per student in 2024 (blank for schools left out of the comparison)
+	measure 'Map m2 per student 2024' = IF ( SELECTEDVALUE ( Schools[in_comparison] ), MAX ( Schools[m2_per_student_2024] ) )
+		formatString: #,0.0
+		lineageTag: 4e65e3b2-3e52-b4b7-f8eb-c3d52221437b
+
 	/// The year the measures use: the year picked, or the latest year (2024) when none is
 	measure 'Year shown' = MAX ( Years[year] )
 		formatString: 0

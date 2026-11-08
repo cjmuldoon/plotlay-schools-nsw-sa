@@ -23,7 +23,8 @@
                     "textStyle": {
                       "fontSize": "22pt",
                       "color": "#163c6e",
-                      "fontWeight": "bold"
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI Semibold"
                     }
                   }
                 ]
@@ -34,7 +35,8 @@
                     "value": "School land from outlines made in Plotlay. Enrolments are headcount. The year slicer sets the cards and the table; the map shows 2024.",
                     "textStyle": {
                       "fontSize": "11pt",
-                      "color": "#5b6573"
+                      "color": "#5b6573",
+                      "fontFamily": "Segoe UI"
                     }
                   }
                 ]
