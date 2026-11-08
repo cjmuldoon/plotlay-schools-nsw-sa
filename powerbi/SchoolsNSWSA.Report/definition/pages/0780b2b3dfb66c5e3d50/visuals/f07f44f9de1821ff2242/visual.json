@@ -5,7 +5,7 @@
     "x": 40,
     "y": 1030,
     "z": 99,
-    "height": 40,
+    "height": 39,
     "width": 1840,
     "tabOrder": 99
   },
@@ -21,7 +21,7 @@
                   {
                     "value": "Data: Productivity Commission RoGS 2026, ACARA, NSW Department of Education, Department for Education SA (CC BY). Outlines made in Plotlay from NSW Cadastre (Spatial Services NSW, CC BY 3.0 AU) and SA Land Use Generalised 2025, City of Adelaide parcels and DEW 2022 rasters (CC BY). Suburbs on the maps: ABS ASGS 2021 (CC BY 4.0).",
                     "textStyle": {
-                      "fontSize": "9pt",
+                      "fontSize": "8.5pt",
                       "color": "#5b6573",
                       "fontFamily": "Segoe UI"
                     }
