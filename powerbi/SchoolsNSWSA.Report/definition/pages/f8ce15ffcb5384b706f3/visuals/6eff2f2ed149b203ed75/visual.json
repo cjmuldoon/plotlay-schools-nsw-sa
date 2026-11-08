@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Spend.financial_year",
-              "nativeQueryRef": "financial_year"
+              "nativeQueryRef": "financial_year",
+              "displayName": "Financial year"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "Spend.Spend per student",
-              "nativeQueryRef": "Spend per student"
+              "nativeQueryRef": "Spend per student",
+              "displayName": "Spend per student ($)"
             }
           ]
         },
@@ -63,10 +65,29 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Spend"
+                  }
+                },
+                "Property": "financial_year"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -84,7 +105,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Real recurrent spend per student, 2014-15 to 2023-24 (2023-24 dollars, excluding the user cost of capital)'"
+                  "Value": "'Recurrent spend per student, real 2023-24 dollars'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -93,6 +121,53 @@
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "30000D"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {
@@ -174,26 +249,6 @@
                 }
               }
             ]
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "start": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "end": {
-              "expr": {
-                "Literal": {
-                  "Value": "30000D"
-                }
-              }
-            }
           }
         }
       ]

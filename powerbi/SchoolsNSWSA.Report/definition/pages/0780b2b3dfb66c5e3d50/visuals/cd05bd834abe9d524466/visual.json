@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "cd05bd834abe9d524466",
   "position": {
-    "x": 1520,
-    "y": 24,
+    "x": 1580,
+    "y": 20,
     "z": 2,
-    "height": 70,
-    "width": 360,
+    "height": 72,
+    "width": 300,
     "tabOrder": 2
   },
   "visual": {
@@ -27,7 +27,9 @@
                 }
               },
               "queryRef": "Years.year",
-              "nativeQueryRef": "year"
+              "nativeQueryRef": "year",
+              "displayName": "Enrolment year",
+              "active": true
             }
           ]
         }
@@ -41,14 +43,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Enrolment year'"
+                  "Value": "false"
                 }
               }
             }
@@ -76,7 +71,47 @@
             "singleSelect": {
               "expr": {
                 "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }
@@ -91,7 +126,7 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "s",
+                    "Name": "y",
                     "Entity": "Years",
                     "Type": 0
                   }
@@ -105,7 +140,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "s"
+                                  "Source": "y"
                                 }
                               },
                               "Property": "year"

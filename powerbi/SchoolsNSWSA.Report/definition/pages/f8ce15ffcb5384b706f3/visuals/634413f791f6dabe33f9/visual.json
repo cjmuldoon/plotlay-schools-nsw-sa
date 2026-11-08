@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "NAPLAN.year_level",
-              "nativeQueryRef": "year_level"
+              "nativeQueryRef": "year_level",
+              "displayName": "Year level"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "NAPLAN.Mean scale score",
-              "nativeQueryRef": "Mean scale score"
+              "nativeQueryRef": "Mean scale score",
+              "displayName": "Mean scale score"
             }
           ]
         },
@@ -63,10 +65,29 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "NAPLAN"
+                  }
+                },
+                "Property": "year_level"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -87,12 +108,58 @@
                   "Value": "'NAPLAN numeracy 2026, mean scale score (all students in the state)'"
                 }
               }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {

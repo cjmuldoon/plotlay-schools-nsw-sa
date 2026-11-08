@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "Schools.Schools under 15 m2",
-              "nativeQueryRef": "Schools under 15 m2"
+              "nativeQueryRef": "Schools under 15 m2",
+              "displayName": "Under 15 m²"
             }
           ]
         },
@@ -63,10 +65,29 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Schools"
+                  }
+                },
+                "Property": "Schools under 15 m2"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -87,12 +108,58 @@
                   "Value": "'Schools under 15 m² per student'"
                 }
               }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {

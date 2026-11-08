@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6cf70737f3bf63b3efce",
   "position": {
-    "x": 1160,
-    "y": 24,
+    "x": 1260,
+    "y": 20,
     "z": 2,
-    "height": 70,
-    "width": 340,
+    "height": 72,
+    "width": 300,
     "tabOrder": 2
   },
   "visual": {
@@ -27,7 +27,9 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State",
+              "active": true
             }
           ]
         }
@@ -41,14 +43,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'State'"
+                  "Value": "false"
                 }
               }
             }
@@ -77,6 +72,46 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }

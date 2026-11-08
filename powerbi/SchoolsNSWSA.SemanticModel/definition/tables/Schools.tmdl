@@ -1,72 +1,75 @@
 table Schools
 	lineageTag: b5fe5259-31dd-3b62-06e0-c1bbabecf0d5
 
-	/// Enrolments for the schools and year in the filter: headcount in NSW, FTE in SA
-	measure Students = SUM ( Enrolments[students] )
+	/// The year the measures use: the year picked, or the latest year (2024) when none is
+	measure 'Year shown' = MAX ( Years[year] )
+		formatString: 0
+		lineageTag: 25f344ff-1177-c725-67a6-0e37d762d55a
+
+	/// Enrolments in the year shown for the schools in the filter: headcount in NSW, FTE in SA
+	measure Students =
+			VAR y = [Year shown]
+			RETURN CALCULATE ( SUM ( Enrolments[students] ), Years[year] = y )
 		formatString: #,0
 		lineageTag: 78cfe164-1bdd-6073-3376-17a649cd06ba
 
 	/// Land of the compared schools with students in the year shown, so a school not yet open adds no land
 	measure 'Area m2' =
 			SUMX (
-			    FILTER ( Schools, Schools[in_comparison] && CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ),
+			    FILTER ( Schools, Schools[in_comparison] && [Students] > 0 ),
 			    Schools[area_m2]
 			)
 		formatString: #,0
 		lineageTag: de44ea58-a9ca-7eb2-adf3-8a5331bb1c28
 
-	/// Students of the compared schools only
+	/// Students of the compared schools only, in the year shown
 	measure 'Students compared' =
 			SUMX (
-			    FILTER ( Schools, Schools[in_comparison] && CALCULATE ( SUM ( Enrolments[students] ) ) > 0 ),
-			    CALCULATE ( SUM ( Enrolments[students] ) )
+			    FILTER ( Schools, Schools[in_comparison] && [Students] > 0 ),
+			    [Students]
 			)
 		formatString: #,0
 		lineageTag: 481a09b7-b58f-333f-07c1-38fe968ae947
 
-	/// All the land of the compared schools divided by all their students
+	/// All the land of the compared schools divided by all their students, in the year shown
 	measure 'Pooled m2 per student' = DIVIDE ( [Area m2], [Students compared] )
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 9306843a-2831-b1cb-c20d-a0ca465e101a
 
-	/// One school: its land (including buildings) divided by its students. Blank for schools left out of the comparison
+	/// One school: its land (including buildings) divided by its students in the year shown. Blank for schools left out of the comparison
 	measure 'm2 per student' = IF ( HASONEVALUE ( Schools[school_id] ), [Pooled m2 per student] )
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 85a6bc5e-1d48-97a2-991c-8b5b3fd29ac9
 
 	/// Compared schools with students in the year shown
-	measure 'Schools compared' = COUNTROWS ( FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ) )
+	measure 'Schools compared' = COUNTROWS ( FILTER ( VALUES ( Schools[school_id] ), [Area m2] > 0 ) )
 		formatString: 0
 		lineageTag: a092d8ab-9697-1c85-37c5-a614b7565fa9
 
-	/// Median of the compared schools in the filter, from area_m2 / students
+	/// Median over the compared schools in the filter of each school's own area_m2 / students, in the year shown
 	measure 'Median m2 per student' =
 			MEDIANX (
-			    FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ),
-			    CALCULATE ( [Pooled m2 per student] )
+			    FILTER ( VALUES ( Schools[school_id] ), [Area m2] > 0 ),
+			    [Pooled m2 per student]
 			)
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 9bd27921-6ba7-1af4-fd4e-6caa9c11d6ce
 
 	measure 'Median m2 per student primary' = CALCULATE ( [Median m2 per student], Schools[level] = "Primary" )
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 63a88e3b-3da7-b4b8-ed77-e9945f9d9d32
 
 	measure 'Median m2 per student secondary' = CALCULATE ( [Median m2 per student], Schools[level] = "Secondary" )
-		formatString: 0.0
+		formatString: #,0.0
 		lineageTag: 735defe4-46ce-30fc-5747-a892228e1df7
 
-	/// Compared schools with under 15 m² of land per student
+	/// Compared schools with under 15 m² of land per student, in the year shown
 	measure 'Schools under 15 m2' =
 			COUNTROWS (
-			    FILTER ( FILTER ( VALUES ( Schools[school_id] ), CALCULATE ( [Area m2] ) > 0 ), CALCULATE ( [Pooled m2 per student] ) < 15 )
+			    FILTER ( FILTER ( VALUES ( Schools[school_id] ), [Area m2] > 0 ), [Pooled m2 per student] < 15 )
 			)
 		formatString: 0
 		lineageTag: 5c849af4-2553-8ff0-6844-f27d35c8c8f1
-
-	measure 'Selected year' = SELECTEDVALUE ( Years[year], 2024 )
-		formatString: 0
-		lineageTag: 06e98748-48aa-c17d-2348-1f7055ed23c2
 
 	column school_id
 		dataType: string

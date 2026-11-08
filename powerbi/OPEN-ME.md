@@ -8,7 +8,7 @@ The report has three pages, in this order:
 2. **SA**: inner Adelaide government schools on their own, with the same visuals in the same places as the NSW page.
 3. **NSW and SA**: the two side by side, with the state as the legend (NSW blue, SA ochre).
 
-Every page has a **State** slicer and an **Enrolment year** slicer. The NSW page is filtered to NSW and the SA page to SA (a page filter, so the slicer there lists one state). On the NSW and SA page the State slicer starts with nothing picked, which shows both; pick one to see it alone. The year slicer starts on 2024 and sets the cards and the school tables. The maps always show 2024, and the state-wide lines (spend, attendance, retention) show every year.
+Every page has an **Enrolment year** slicer, a dropdown that takes one year at a time and starts on 2024; it sets the cards and the school tables, and the measures always count one year (the latest, 2024, if the slicer is ever cleared). The NSW page is filtered to NSW and the SA page to SA (a page filter). The NSW and SA page also has a **State** dropdown that starts with nothing picked, which shows both; pick one to see it alone. The maps always show 2024, and the state-wide lines (spend, attendance, retention) show every year.
 
 ## What you need
 
@@ -23,14 +23,25 @@ Every page has a **State** slicer and an **Enrolment year** slicer. The NSW page
    - By default the data is read from the repo's public copy on GitHub (`DataFolder` is `https://raw.githubusercontent.com/cjmuldoon/plotlay-schools-nsw-sa/main/data/`). If Desktop asks how to connect to that address, choose **Anonymous** and **Connect**.
    - To read the files from the folder on disk instead (no internet, or before the repo is public): **Home, Transform data, Edit parameters**, set `DataFolder` to the full path of the repo's `data` folder **ending with a backslash**, for example `\\Mac\Home\plotlay-schools-nsw-sa\data\`, then **OK** and **Apply changes**. Power BI can't use a path relative to the project file, so this one parameter is the only place a folder is named.
    - If Desktop warns about privacy levels, choose **Ignore privacy levels** for this file (all the sources are public open data) or set the sources to Public.
-4. With the year slicer on 2024 the cards should read:
+4. Check the numbers (below).
 
-   | Page | Schools compared | Median m² per student, primary | Median m² per student, secondary | Schools under 15 m² |
-   |---|---|---|---|---|
-   | NSW | 79 | 28.1 | 29.4 | 10 |
-   | SA | 51 | 42.4 | 34.4 | 3 |
+## Check the numbers after Refresh
 
-   These are the figures in `data/comparison/10_inner_city_summary.csv`. If they match, the tables are joined correctly.
+After **Refresh**, with the **Enrolment year** slicer on **2024** (as the report opens; it takes one year at a time), the cards should read:
+
+| Page | Schools compared | Median m² per student, primary | Median m² per student, secondary | Schools under 15 m² per student |
+|---|---|---|---|---|
+| NSW | 79 | 28.1 | 29.4 | 10 |
+| SA | 51 | 42.4 | 34.4 | 3 |
+
+These are the figures in `data/comparison/10_inner_city_summary.csv`. Pick **2019** in the year slicer and they change to:
+
+| Page | Schools compared | Median, primary | Median, secondary | Under 15 m² |
+|---|---|---|---|---|
+| NSW | 79 | 21.9 | 29.5 | 12 |
+| SA | 51 | 38.7 | 38.4 | 2 |
+
+On the **NSW and SA** page (both states, 2024) the table reads a pooled 31.0 m² per student for NSW and 43.5 for SA, with 38,386 and 29,886 students in the compared schools. If a card is blank, Refresh has not finished or the data folder is wrong (step 3).
 
 ## How the model fits together
 
@@ -40,22 +51,19 @@ Every page has a **State** slicer and an **Enrolment year** slicer. The NSW page
 - `States` (NSW, SA) filters everything: the slicers and legends use `States[state]`.
 - Measures: `Students`, `Area m2`, `Students compared`, `Pooled m2 per student`, `m2 per student`, `Schools compared`, `Median m2 per student` (and its primary and secondary versions) and `Schools under 15 m2`. A school counts in the comparison when `in_comparison` is true and it has students in the year shown; its figure is `area_m2 / students`.
 
-## The two maps: one setting Power BI asks for by hand
+## The two maps
 
-Power BI keeps a custom map file inside the report only once you have chosen it in Desktop, so do this once on each state page and save:
+Each state page has a Shape Map of its schools. The custom map files are saved inside the report (`SchoolsNSWSA.Report/StaticResources/RegisteredResources/`: `sydney_outlines_from_plotlay.topojson` and `adelaide_outlines_from_plotlay.topojson`, copies of the files in `data/nsw/` and `data/sa/` that keep only the school code), so the outlines draw on open with no step by hand. The map matches `Schools[school_key]` to the code in each outline.
 
-- **NSW page.** Select the map, then **Format visual, Visual, Map settings**: Map type **Custom map**, **Add map type** (or Browse), choose `..\data\nsw\sydney_outlines_from_plotlay.topojson`. Under **View map keys** you should see school codes (3305, 3935...) matched. Projection: Mercator.
-- **SA page.** The same, with `..\data\sa\adelaide_outlines_from_plotlay.topojson` (codes such as 120, 1881).
+If a map shows the United States instead (an older Desktop can ignore a saved map): select it, then **Format visual** (the paintbrush), **Visual**, **Map settings**, **Map type: Custom map**, **Add map type** (or **Browse**), and choose `..\data\nsw\sydney_outlines_from_plotlay.topojson` on the NSW page or `..\data\sa\adelaide_outlines_from_plotlay.topojson` on the SA page. Under **View map keys** the school codes (3305, 3935... and 120, 1881...) should be matched. Projection: Mercator.
 
 The colours are fixed bins of m² of land per student in 2024: under 15, 15 to 30, 30 to 60, 60 or more, and grey for schools left out of the comparison. They are set per legend value, so both pages use the same colour for the same bin. If the Shape Map is not in the Visualizations pane at all, turn it on in **Options, Preview features, Shape map visual**. If a map comes up empty after opening (Power BI sometimes drops the fields of a map it can't draw yet), drag them back: Location `Schools[school_key]`, Legend `Schools[m2_band_label]`.
 
 The NSW and SA page has no map: the two cities are about 1,160 km apart, so one map would show two dots. Its charts compare the same measures instead.
 
-Then **File, Save**. Desktop writes your choices back into the project folder.
-
 ## Save a .pbix too
 
-A `.pbix` is a single file anyone can open, but only Power BI Desktop can write one. After the refresh and the two map settings: **File, Save as**, set the file type to **Power BI file (\*.pbix)**, and save it as `powerbi\SchoolsNSWSA.pbix` next to the project. It includes the data, so it opens without a refresh.
+A `.pbix` is a single file anyone can open, but only Power BI Desktop can write one. After the refresh: **File, Save as**, set the file type to **Power BI file (\*.pbix)**, and save it as `powerbi\SchoolsNSWSA.pbix` next to the project. It includes the data, so it opens without a refresh.
 
 ## Publish (only if you choose to)
 

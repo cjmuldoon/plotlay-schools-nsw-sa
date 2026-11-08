@@ -5,7 +5,7 @@
     "x": 664,
     "y": 110,
     "z": 1,
-    "height": 110,
+    "height": 140,
     "width": 196,
     "tabOrder": 1
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Schools under 15 m2",
-              "nativeQueryRef": "Schools under 15 m2"
+              "nativeQueryRef": "Schools under 15 m2",
+              "displayName": "Under 15 m²"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Schools under 15 m² per student'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

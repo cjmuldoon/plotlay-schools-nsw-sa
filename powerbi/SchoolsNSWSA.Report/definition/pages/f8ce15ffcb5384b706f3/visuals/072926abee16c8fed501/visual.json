@@ -122,6 +122,24 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "States"
+                  }
+                },
+                "Property": "state"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -140,6 +158,141 @@
               "expr": {
                 "Literal": {
                   "Value": "'The two cities in the enrolment year shown'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "84.5D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "States.state"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "136.5D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Schools compared"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Median m2 per student primary"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "138.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Median m2 per student secondary"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Pooled m2 per student"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Schools under 15 m2"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "123.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Students compared"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

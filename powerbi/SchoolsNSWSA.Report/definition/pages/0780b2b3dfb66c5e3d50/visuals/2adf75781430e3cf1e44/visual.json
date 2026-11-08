@@ -5,7 +5,7 @@
     "x": 40,
     "y": 110,
     "z": 1,
-    "height": 110,
+    "height": 140,
     "width": 195,
     "tabOrder": 1
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Schools compared",
-              "nativeQueryRef": "Schools compared"
+              "nativeQueryRef": "Schools compared",
+              "displayName": "Schools compared"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Schools compared'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

@@ -3,9 +3,9 @@
   "name": "abe19add63781e6ba7a9",
   "position": {
     "x": 40,
-    "y": 235,
+    "y": 265,
     "z": 1,
-    "height": 775,
+    "height": 745,
     "width": 820,
     "tabOrder": 1
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.school_key",
-              "nativeQueryRef": "school_key"
+              "nativeQueryRef": "school_key",
+              "displayName": "School code"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "Schools.m2_band_label",
-              "nativeQueryRef": "m2_band_label"
+              "nativeQueryRef": "m2_band_label",
+              "displayName": "m² per student"
             }
           ]
         }
@@ -66,7 +68,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'m² of land per student, 2024 (custom map: data/nsw/sydney_outlines_from_plotlay.topojson)'"
+                  "Value": "'m² of land per student, 2024'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -75,6 +84,60 @@
       ]
     },
     "objects": {
+      "shape": [
+        {
+          "properties": {
+            "datasourceType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'file_upload'"
+                }
+              }
+            },
+            "mapUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "map": {
+              "geoJson": {
+                "type": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'packaged'"
+                    }
+                  }
+                },
+                "name": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'sydney_outlines_from_plotlay.topojson'"
+                    }
+                  }
+                },
+                "content": {
+                  "expr": {
+                    "ResourcePackageItem": {
+                      "PackageName": "RegisteredResources",
+                      "PackageType": 1,
+                      "ItemName": "sydney_outlines_from_plotlay.topojson"
+                    }
+                  }
+                }
+              }
+            },
+            "projectionEnum": {
+              "expr": {
+                "Literal": {
+                  "Value": "'mercator'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {

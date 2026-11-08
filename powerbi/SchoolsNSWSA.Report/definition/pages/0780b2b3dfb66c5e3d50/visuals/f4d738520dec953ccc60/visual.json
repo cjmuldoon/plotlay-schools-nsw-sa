@@ -58,7 +58,7 @@
               },
               "queryRef": "Schools.nsw_only_ram_per_student_2024",
               "nativeQueryRef": "nsw_only_ram_per_student_2024",
-              "displayName": "RAM per student 2024"
+              "displayName": "RAM per student, 2024"
             }
           ]
         }
@@ -79,7 +79,7 @@
             "direction": "Ascending"
           }
         ],
-        "isDefaultSort": true
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -97,7 +97,86 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'ICSEA and equity (RAM) funding per student: NSW only, no SA equivalent published'"
+                  "Value": "'ICSEA and equity (RAM) funding per student, NSW only'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "158.1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.school_name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "65.2D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.nsw_only_icsea"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "82.7D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.nsw_only_ram_per_student_2024"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

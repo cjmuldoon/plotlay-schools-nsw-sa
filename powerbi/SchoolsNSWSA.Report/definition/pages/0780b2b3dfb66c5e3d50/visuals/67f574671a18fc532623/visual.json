@@ -47,21 +47,6 @@
             },
             {
               "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Schools"
-                    }
-                  },
-                  "Property": "suburb"
-                }
-              },
-              "queryRef": "Schools.suburb",
-              "nativeQueryRef": "suburb",
-              "displayName": "Suburb"
-            },
-            {
-              "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
@@ -88,7 +73,7 @@
               },
               "queryRef": "Schools.area_m2",
               "nativeQueryRef": "area_m2",
-              "displayName": "Land m²"
+              "displayName": "Land (m²)"
             },
             {
               "field": {
@@ -139,7 +124,7 @@
             "direction": "Ascending"
           }
         ],
-        "isDefaultSort": true
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -158,6 +143,127 @@
               "expr": {
                 "Literal": {
                   "Value": "'Compared schools, least land per student first'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "243.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.school_name"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.level"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76.3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.Students"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "64.0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.area_m2"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "68.8D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.m2 per student"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "67.1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Schools.grade"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

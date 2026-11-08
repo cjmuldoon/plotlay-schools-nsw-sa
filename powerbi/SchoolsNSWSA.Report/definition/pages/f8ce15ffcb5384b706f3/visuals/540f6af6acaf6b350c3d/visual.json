@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.level",
-              "nativeQueryRef": "level"
+              "nativeQueryRef": "level",
+              "displayName": "Level"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "Schools.Median m2 per student",
-              "nativeQueryRef": "Median m2 per student"
+              "nativeQueryRef": "Median m2 per student",
+              "displayName": "Median m² per student"
             }
           ]
         },
@@ -63,10 +65,29 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Schools"
+                  }
+                },
+                "Property": "level"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -87,12 +108,58 @@
                   "Value": "'Median m² per student by level'"
                 }
               }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {

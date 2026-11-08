@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Outcomes.year",
-              "nativeQueryRef": "year"
+              "nativeQueryRef": "year",
+              "displayName": "Year"
             }
           ]
         },
@@ -45,10 +46,29 @@
                 }
               },
               "queryRef": "Outcomes.Outcome %",
-              "nativeQueryRef": "Outcome %"
+              "nativeQueryRef": "Outcome %",
+              "displayName": "Per cent"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Outcomes"
+                  }
+                },
+                "Property": "year"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -69,12 +89,66 @@
                   "Value": "'Apparent retention, Year 7 or 8 to Year 12 (%)'"
                 }
               }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "105D"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {
@@ -86,26 +160,6 @@
                       "Value": "'#c0702a'"
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "start": {
-              "expr": {
-                "Literal": {
-                  "Value": "60D"
-                }
-              }
-            },
-            "end": {
-              "expr": {
-                "Literal": {
-                  "Value": "100D"
                 }
               }
             }

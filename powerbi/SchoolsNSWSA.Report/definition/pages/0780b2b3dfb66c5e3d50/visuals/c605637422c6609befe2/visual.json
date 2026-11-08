@@ -5,7 +5,7 @@
     "x": 456,
     "y": 110,
     "z": 1,
-    "height": 110,
+    "height": 140,
     "width": 195,
     "tabOrder": 1
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Schools.Median m2 per student secondary",
-              "nativeQueryRef": "Median m2 per student secondary"
+              "nativeQueryRef": "Median m2 per student secondary",
+              "displayName": "Median m², secondary"
             }
           ]
         }
@@ -49,6 +50,28 @@
               "expr": {
                 "Literal": {
                   "Value": "'Median m² per student, secondary'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

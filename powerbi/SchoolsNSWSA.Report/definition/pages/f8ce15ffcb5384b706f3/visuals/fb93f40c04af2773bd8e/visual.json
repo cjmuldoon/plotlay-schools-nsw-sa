@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Outcomes.year",
-              "nativeQueryRef": "year"
+              "nativeQueryRef": "year",
+              "displayName": "Year"
             }
           ]
         },
@@ -45,7 +46,8 @@
                 }
               },
               "queryRef": "Outcomes.Outcome %",
-              "nativeQueryRef": "Outcome %"
+              "nativeQueryRef": "Outcome %",
+              "displayName": "Per cent"
             }
           ]
         },
@@ -63,10 +65,29 @@
                 }
               },
               "queryRef": "States.state",
-              "nativeQueryRef": "state"
+              "nativeQueryRef": "state",
+              "displayName": "State"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Outcomes"
+                  }
+                },
+                "Property": "year"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
       }
     },
     "drillFilterOtherVisuals": true,
@@ -87,12 +108,66 @@
                   "Value": "'Students attending 90% or more of days, Years 1 to 10 (%)'"
                 }
               }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "40D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "80D"
+                }
+              }
+            }
+          }
+        }
+      ],
       "dataPoint": [
         {
           "properties": {
@@ -174,26 +249,6 @@
                 }
               }
             ]
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "start": {
-              "expr": {
-                "Literal": {
-                  "Value": "40D"
-                }
-              }
-            },
-            "end": {
-              "expr": {
-                "Literal": {
-                  "Value": "85D"
-                }
-              }
-            }
           }
         }
       ]

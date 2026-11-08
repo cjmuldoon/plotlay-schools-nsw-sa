@@ -29,6 +29,16 @@
           "name": "Plotlay_drafting_film.json",
           "path": "Plotlay_drafting_film.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "sydney_outlines_from_plotlay.topojson",
+          "path": "sydney_outlines_from_plotlay.topojson",
+          "type": "ShapeMap"
+        },
+        {
+          "name": "adelaide_outlines_from_plotlay.topojson",
+          "path": "adelaide_outlines_from_plotlay.topojson",
+          "type": "ShapeMap"
         }
       ]
     }
