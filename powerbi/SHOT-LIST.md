@@ -1,6 +1,6 @@
 # Shot list for the showcase page and the video
 
-Capture in Power BI Desktop at 1920 × 1080 (Windows display scaling 100%), with the Plotlay theme on, after the refresh (see `OPEN-ME.md`). In Parallels, use the Windows Snipping Tool (Win+Shift+S) for stills and Win+Alt+R (Xbox Game Bar) or Clipchamp for a clip. Save them to `powerbi/screenshots/` with the file names below.
+Capture in Power BI Desktop at 1920 × 1080 (Windows display scaling 100%), with the Plotlay theme on, after the refresh (see `OPEN-ME.md`). In Parallels, use the Windows Snipping Tool (Win+Shift+S) for stills and Win+Alt+R (Xbox Game Bar) or Clipchamp for a clip. Save them to `powerbi/Screenshots/` with the file names below.
 
 Close the Filters, Visualizations and Data panes before a shot (**View**, untick them) so the page fills the window. Keep the footer with the data credits in every shot, except the close crops in shots 3 and 6, which go next to a full-page shot on the site.
 

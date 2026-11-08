@@ -25,6 +25,8 @@ Every page has an **Enrolment year** slicer, a dropdown that takes one year at a
    - If Desktop warns about privacy levels, choose **Ignore privacy levels** for this file (all the sources are public open data) or set the sources to Public.
 4. Check the numbers (below).
 
+If the report was updated while open, close Power BI and reopen the .pbip rather than using Apply external changes. (After Apply external changes one export drew the page at about 57% inside a much larger canvas; a full close and reopen put it right.)
+
 ## Check the numbers after Refresh
 
 After **Refresh**, with the **Enrolment year** slicer on **2024** (as the report opens; it takes one year at a time), the cards should read:
@@ -57,7 +59,7 @@ Each state page has a Shape Map of its schools. The custom map files are saved i
 
 If a map shows the United States instead (an older Desktop can ignore a saved map): select it, then **Format visual** (the paintbrush), **Visual**, **Map settings**, **Map type: Custom map**, **Add map type** (or **Browse**), and choose `..\data\nsw\sydney_outlines_from_plotlay.topojson` on the NSW page or `..\data\sa\adelaide_outlines_from_plotlay.topojson` on the SA page. Under **View map keys** the school codes (3305, 3935... and 120, 1881...) should be matched. Projection: Mercator.
 
-The colours are fixed bins of m² of land per student in 2024: under 15, 15 to 30, 30 to 60, 60 or more, and grey for schools left out of the comparison. They are set per legend value, so both pages use the same colour for the same bin. If the Shape Map is not in the Visualizations pane at all, turn it on in **Options, Preview features, Shape map visual**. If a map comes up empty after opening (Power BI sometimes drops the fields of a map it can't draw yet), drag them back: Location `Schools[school_key]`, Legend `Schools[m2_band_label]`.
+Each school is coloured by its m² of land per student in 2024 on a scale with fixed break points, the same on both pages: dark red at 10 m² or under, orange at 30, palest at 60 or more, and grey for schools left out of the comparison. If the Shape Map is not in the Visualizations pane at all, turn it on in **Options, Preview features, Shape map visual**. If a map comes up empty after opening (Power BI sometimes drops the fields of a map it can't draw yet), drag them back: Location `Schools[school_key]`, Color saturation `[Map m2 per student 2024]`.
 
 The NSW and SA page has no map: the two cities are about 1,160 km apart, so one map would show two dots. Its charts compare the same measures instead.
 
