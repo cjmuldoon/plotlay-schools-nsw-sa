@@ -78,6 +78,13 @@ UPSTREAM SOURCES
     of the Unley High School outline, where one land-use polygon also holds Urrbrae Agricultural High, TAFE SA and
     Waite land. No raster data is included.
 
+POWER BI MAP CONTEXT
+  The Shape Maps in powerbi/ draw suburb and locality boundaries and the 7 km study circle round the schools: Australian
+  Bureau of Statistics, Australian Statistical Geography Standard (ASGS) Edition 3, Suburbs and Localities 2021,
+  CC BY 4.0, generalised and cut to the map frame. Water is not a layer: it is the map background showing where no
+  land is drawn.
+
+
 NOT INCLUDED
   Nothing in this repository is derived from OpenStreetMap. No Google, Nearmap, Esri or Mapbox imagery was used.
   The SA cadastre and Location SA imagery were not used (they are not open data). ACARA's School Profile, School
