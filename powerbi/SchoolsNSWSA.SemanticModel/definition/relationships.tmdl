@@ -21,4 +21,3 @@ relationship 27004836-8aae-8e40-f232-9e568062d839
 relationship 3b857e70-028d-daf4-f274-4e003def3849
 	fromColumn: NAPLAN.state
 	toColumn: States.state
-

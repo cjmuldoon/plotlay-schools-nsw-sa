@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "cfb1eea9039dc145ef55",
   "position": {
-    "x": 39.288256227758005,
-    "y": 13.665480427046262,
+    "x": 40,
+    "y": 4,
     "z": 0,
-    "height": 87.11743772241992,
-    "width": 1202.5622775800712,
+    "height": 96,
+    "width": 1148,
     "tabOrder": 0
   },
   "visual": {
@@ -21,10 +21,10 @@
                   {
                     "value": "NSW AND SA SIDE BY SIDE",
                     "textStyle": {
-                      "fontWeight": "bold",
                       "fontSize": "22pt",
                       "color": "#163c6e",
-                      "fontFamily": "Segoe UI Semibold"
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontWeight": "bold"
                     }
                   }
                 ]

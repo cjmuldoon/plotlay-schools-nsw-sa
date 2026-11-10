@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "cd05bd834abe9d524466",
   "position": {
-    "x": 1554.4483985765123,
-    "y": 20.498220640569393,
+    "x": 1552,
+    "y": 4,
     "z": 2,
-    "height": 71.743772241992872,
-    "width": 327.97153024911029,
+    "height": 96,
+    "width": 328,
     "tabOrder": 2
   },
   "visual": {
@@ -28,12 +28,28 @@
               },
               "queryRef": "Years.year",
               "nativeQueryRef": "year",
-              "active": true,
-              "displayName": "Enrolment year"
+              "displayName": "Enrolment year",
+              "active": true
             }
           ]
         }
       }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "objects": {
       "data": [
@@ -149,40 +165,6 @@
           }
         }
       ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "04cb0e0fa4b3ed17daba",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Years"
-              }
-            },
-            "Property": "year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
+    }
   }
 }

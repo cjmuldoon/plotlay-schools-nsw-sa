@@ -22,14 +22,20 @@
   },
   "resourcePackages": [
     {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
-        {
-          "name": "adelaide_outlines_from_plotlay.topojson",
-          "path": "adelaide_outlines_from_plotlay.topojson",
-          "type": "ShapeMap"
-        },
         {
           "name": "Plotlay_drafting_film.json",
           "path": "Plotlay_drafting_film.json",
@@ -39,17 +45,11 @@
           "name": "sydney_outlines_from_plotlay.topojson",
           "path": "sydney_outlines_from_plotlay.topojson",
           "type": "ShapeMap"
-        }
-      ]
-    },
-    {
-      "name": "SharedResources",
-      "type": "SharedResources",
-      "items": [
+        },
         {
-          "name": "CY24SU10",
-          "path": "BaseThemes/CY24SU10.json",
-          "type": "BaseTheme"
+          "name": "adelaide_outlines_from_plotlay.topojson",
+          "path": "adelaide_outlines_from_plotlay.topojson",
+          "type": "ShapeMap"
         }
       ]
     }

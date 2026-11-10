@@ -3,13 +3,11 @@ model Model
 	defaultPowerBIDataSourceVersion: powerBI_V3
 	sourceQueryCulture: en-AU
 	dataAccessOptions
-		fastCombine
 		legacyRedirects
 		returnErrorValuesAsNull
 
 annotation PBI_QueryOrder = ["DataFolder","GetFile","States","Schools","Enrolments","Years","Spend","Outcomes","NAPLAN"]
-
-annotation PBI_ProTooling = ["DevMode"]
+annotation __PBI_TimeIntelligenceEnabled = 0
 
 ref table States
 ref table Schools
@@ -20,4 +18,3 @@ ref table Outcomes
 ref table NAPLAN
 
 ref cultureInfo en-AU
-

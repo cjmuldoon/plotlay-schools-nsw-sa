@@ -63,4 +63,3 @@ table NAPLAN
 				    Out
 
 	annotation PBI_ResultType = Table
-
